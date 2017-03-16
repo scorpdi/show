@@ -1,0 +1,441 @@
+/* 皮肤 */
+/*导航条半透明rgba样式*/
+/*线*/
+/*未选中字体颜色*/
+/* 选中字体颜色-（原色调-不变）*/
+/* 选中块的背景色 */
+/* end 导航*/
+/* search */
+/* footer */
+/* */
+/* function*/
+/*#fdc101 253,193,1*/
+/*#5578dd 85, 120, 221*/
+/*左侧标题颜色*/
+/*左侧标题小超链字体颜色hover后的颜色*/
+/*左侧标题小超链字体颜色*/
+/*右侧主内容标题下文案颜色*/
+/*蒙层中文字颜色和当前页文字颜色*/
+/*整个主题内容背景色*/
+.g-newct {
+  width: 100%;
+  background: #ffffff;
+  padding-bottom: 90px;
+  min-width: 566px;
+}
+.g-newct .g-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 5.6%;
+  *zoom: 1;
+  position: relative;
+}
+.g-newct .g-main:before,
+.g-newct .g-main:after {
+  content: "";
+  display: table;
+}
+.g-newct .g-main:after {
+  clear: both;
+}
+.g-newct .g-main .g-sidebar {
+  width: 22%;
+  float: left;
+  *display: inline;
+  margin-left: 2%;
+  position: relative;
+}
+.g-newct .g-main .g-sidebar h3 {
+  width: 98%;
+  margin-left: 2%;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 23px;
+  color: #494444;
+}
+.g-newct .g-main .g-sidebar .line {
+  width: 98%;
+  margin-left: 2%;
+  border-top: 2px solid #5578dd;
+  margin-top: 20px;
+}
+.g-newct .g-main .g-sidebar .list {
+  width: 98%;
+  margin-left: 2%;
+}
+.g-newct .g-main .g-sidebar .list .title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  padding: 17px 0 17px 26px;
+  background: url(../images/hl_left.png) no-repeat left center;
+  cursor: pointer;
+  border-bottom: 1px solid #e3e3e3;
+  display: block;
+}
+.g-newct .g-main .g-sidebar .list .titletwo {
+  line-height: 20px;
+  background-position: left 17px;
+}
+.g-newct .g-main .g-sidebar .list .active {
+  background: url(../images/hl_down.png) no-repeat left 20px;
+}
+.g-newct .g-main .g-sidebar .list li {
+  padding-left: 26px;
+  margin-top: 13px;
+  display: none;
+}
+.g-newct .g-main .g-sidebar .list li a {
+  background: url(../images/hl_sleft.png) no-repeat left center;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+.g-newct .g-main .g-sidebar .list li a:hover {
+  color: #000;
+}
+.g-newct .g-main .g-container {
+  width: 71.16%;
+  padding-left: 40px;
+  float: left;
+  *display: inline;
+  overflow: hidden;
+  position: relative;
+}
+.g-newct .g-main .g-container .g-bags {
+  background: #fbfaf8;
+  padding-top: 7%;
+  margin-top: 30px;
+  position: relative;
+}
+.g-newct .g-main .g-container .g-bags h3 {
+  font-size: 16px;
+  line-height: 28px;
+  color: #999999;
+  text-align: center;
+}
+.g-newct .g-main .g-container .g-bags p {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000;
+  table-layout: fixed;
+  word-break: break-all;
+  overflow: hidden;
+  text-align: justify;
+}
+.g-newct .g-main .g-container .g-bags .g-textthree {
+  padding-bottom: 15px;
+}
+.g-newct .g-main .g-container .g-bags .bags {
+  background: #e6e6e6;
+  padding: 20px 0;
+  *zoom: 1;
+}
+.g-newct .g-main .g-container .g-bags .bags:before,
+.g-newct .g-main .g-container .g-bags .bags:after {
+  content: "";
+  display: table;
+}
+.g-newct .g-main .g-container .g-bags .bags:after {
+  clear: both;
+}
+.g-newct .g-main .g-container .g-bags .bags li {
+  width: 46%;
+  float: left;
+  *display: inline;
+  margin-left: 5%;
+}
+.g-newct .g-main .g-container .g-bags .bags li span {
+  font-size: 18px;
+  line-height: 18px;
+  color: #a1a1a1;
+}
+.g-newct .g-main .g-container .g-bags .bags li a {
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 26px;
+  color: #a1a1a1;
+}
+.g-newct .g-main .g-container .g-bags .bags .li-two {
+  width: 38%;
+  margin-left: 7%;
+}
+.g-newct .g-main .g-container .g-bags .g-header {
+  background: #5578dd;
+  height: 67px;
+  font-size: 28px;
+  line-height: 67px;
+  color: #fff;
+  position: absolute;
+  left: -60px;
+  top: -30px;
+  z-index: 20;
+  padding-left: 6%;
+  width: 92%;
+}
+.g-newct .g-main .g-container .g-news {
+  background: #fbfaf8;
+  position: relative;
+}
+.g-newct .g-main .g-container .g-news .listone {
+  *zoom: 1;
+  padding-top: 74px;
+  padding-bottom: 30px;
+}
+.g-newct .g-main .g-container .g-news .listone:before,
+.g-newct .g-main .g-container .g-news .listone:after {
+  content: "";
+  display: table;
+}
+.g-newct .g-main .g-container .g-news .listone:after {
+  clear: both;
+}
+.g-newct .g-main .g-container .g-news .listone li {
+  width: 45%;
+  margin-left: 3%;
+  float: left;
+  *display: inline;
+}
+.g-newct .g-main .g-container .g-news .listone li a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  position: relative;
+  color: #888888;
+  border-bottom: 2px dotted #eee;
+}
+.g-newct .g-main .g-container .g-news .listone li a .a-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.g-newct .g-main .g-container .g-news .listone li a .a-day {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.g-newct .g-main .g-container .g-news .listone li a:hover {
+  color: #000;
+}
+.g-newct .g-main .g-container .g-news .g-header {
+  background: #5578dd;
+  height: 47px;
+  font-size: 18px;
+  line-height: 47px;
+  color: #fff;
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  z-index: 20;
+  padding-left: 6%;
+  width: 93%;
+}
+.g-newct .g-main .g-container .g-slide {
+  background: #fbfaf8;
+  padding-bottom: 30px;
+  position: relative;
+  padding-top: 75px;
+}
+.g-newct .g-main .g-container .g-slide .small-box {
+  *zoom: 1;
+}
+.g-newct .g-main .g-container .g-slide .small-box:before,
+.g-newct .g-main .g-container .g-slide .small-box:after {
+  content: "";
+  display: table;
+}
+.g-newct .g-main .g-container .g-slide .small-box:after {
+  clear: both;
+}
+.g-newct .g-main .g-container .g-slide .small-box .btn {
+  display: block;
+  width: 19px;
+  height: 32px;
+  cursor: pointer;
+  margin-top: 38px;
+}
+.g-newct .g-main .g-container .g-slide .small-box .left-btn {
+  float: left;
+  *display: inline;
+  margin-right: 4px;
+  margin-left: 16px;
+  background: url(../images/qy-btuleft.png);
+}
+.g-newct .g-main .g-container .g-slide .small-box .right-btn {
+  float: right;
+  *display: inline;
+  margin-right: 15px;
+  background: url(../images/qy-bturight.png);
+}
+.g-newct .g-main .g-container .g-slide .small-box .small-list {
+  position: relative;
+  float: left;
+  *display: inline;
+  width: 762px;
+  overflow: hidden;
+  height: 106px;
+}
+.g-newct .g-main .g-container .g-slide .small-box .small-list ul {
+  *zoom: 1;
+}
+.g-newct .g-main .g-container .g-slide .small-box .small-list ul:before,
+.g-newct .g-main .g-container .g-slide .small-box .small-list ul:after {
+  content: "";
+  display: table;
+}
+.g-newct .g-main .g-container .g-slide .small-box .small-list ul:after {
+  clear: both;
+}
+.g-newct .g-main .g-container .g-slide .small-box .small-list ul li {
+  width: 140px;
+  height: 100px;
+  border: 1px solid #eee;
+  padding: 2px;
+  float: left;
+  *display: inline;
+  margin-left: 6px;
+  position: relative;
+}
+.g-newct .g-main .g-container .g-slide .small-box .small-list ul li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.g-newct .g-main .g-container .g-slide .small-box .small-list ul li.on .bun-bg {
+  display: block;
+}
+.g-newct .g-main .g-container .g-slide .small-box .small-list ul li .bun-bg {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+}
+.g-newct .g-main .g-container .g-slide .g-header {
+  background: #5578dd;
+  height: 47px;
+  font-size: 18px;
+  line-height: 47px;
+  color: #fff;
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  z-index: 20;
+  padding-left: 6%;
+  width: 93%;
+}
+@media screen and (max-width: 1200px) {
+  .g-newct .g-main .g-container .g-news .listone li a {
+    font-size: 12px;
+  }
+  .g-newct .g-main .g-container .g-slide .small-box {
+    width: 680px;
+    margin: 0 auto;
+  }
+  .g-newct .g-main .g-container .g-slide .small-box .btn {
+    margin-top: 24px;
+  }
+  .g-newct .g-main .g-container .g-slide .small-box .small-list {
+    width: 598px;
+  }
+  .g-newct .g-main .g-container .g-slide .small-box .small-list ul li {
+    width: 106px;
+    height: 77px;
+  }
+}
+@media screen and (max-width: 1004px) and (min-width: 960px) {
+  .g-newct .g-main .g-sidebar h3 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .g-newct .g-main .g-sidebar .list .title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .g-newct .g-main .g-sidebar .list li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .g-newct .g-main .g-sidebar {
+    float: none;
+    width: 95%;
+  }
+  .g-newct .g-main .g-container {
+    width: 90%;
+    margin-left: 2%;
+    float: left;
+    overflow: hidden;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .g-newct .g-main .g-container .g-news .listone li {
+    float: none;
+    width: 95%;
+  }
+  .g-newct .g-main .g-container .g-news .listone li a {
+    font-size: 12px;
+  }
+  .g-newct .g-main .g-container .g-slide .small-box {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .g-newct .g-main .g-container .g-slide .small-box .btn {
+    margin-top: 12px;
+  }
+  .g-newct .g-main .g-container .g-slide .small-box .small-list {
+    width: 407px;
+  }
+  .g-newct .g-main .g-container .g-slide .small-box .small-list ul li {
+    width: 68px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .g-newct {
+    min-width: 0;
+    padding-bottom: 0;
+  }
+  .g-newct .g-main .g-container {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .g-newct .g-main .g-container .g-bags {
+    padding-top: 11%;
+  }
+  .g-newct .g-main .g-container .g-bags .g-header {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+  }
+  .g-newct .g-main .g-container .g-bags p {
+    text-align: justify;
+  }
+  .g-newct .g-main .g-container .g-news .g-header,
+  .g-newct .g-main .g-container .g-slide .g-header {
+    width: 100%;
+  }
+  .g-newct .g-main .g-container .g-slide {
+    display: none;
+  }
+  .g-newct .g-main .g-container .a-list li a {
+    font-size: 15px;
+  }
+  .g-newct .g-main .g-container .g-page .pagelist {
+    width: 85.23%;
+  }
+}

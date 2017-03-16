@@ -1,0 +1,267 @@
+/* 皮肤 */
+/* */
+/*左侧标题颜色*/
+/*左侧标题小超链字体颜色hover后的颜色*/
+/*左侧标题小超链字体颜色*/
+/*右侧主内容标题下文案颜色*/
+/*see more按钮颜色*/
+/*右侧主内容单个产品背景色*/
+/*整个主题内容背景色*/
+.btest {
+  float: left;
+  *display: inline;
+  background: #fdc101;
+}
+.g-secondlist {
+  width: 100%;
+  background: #ffffff;
+}
+.g-secondlist .g-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 186px;
+  *zoom: 1;
+}
+.g-secondlist .g-main:before,
+.g-secondlist .g-main:after {
+  content: "";
+  display: table;
+}
+.g-secondlist .g-main:after {
+  clear: both;
+}
+.g-secondlist .g-main .g-sidebar {
+  width: 22%;
+  float: left;
+  *display: inline;
+  margin-left: 2%;
+}
+.g-secondlist .g-main .g-sidebar h3 {
+  width: 98%;
+  margin-left: 2%;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 23px;
+  color: #494444;
+}
+.g-secondlist .g-main .g-sidebar .line {
+  width: 98%;
+  margin-left: 2%;
+  border-top: 2px solid #fdc101;
+  margin-top: 20px;
+}
+.g-secondlist .g-main .g-sidebar .list {
+  width: 98%;
+  margin-left: 2%;
+}
+.g-secondlist .g-main .g-sidebar .list .title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  padding: 17px 0 17px 26px;
+  background: url(../images/hl_left.png) no-repeat left center;
+  cursor: pointer;
+  border-bottom: 1px solid #e3e3e3;
+}
+.g-secondlist .g-main .g-sidebar .list .titletwo {
+  line-height: 20px;
+  background-position: left 17px;
+}
+.g-secondlist .g-main .g-sidebar .list .active {
+  background: url(../images/hl_down.png) no-repeat left 20px;
+}
+.g-secondlist .g-main .g-sidebar .list li {
+  padding-left: 26px;
+  margin-top: 13px;
+  display: none;
+}
+.g-secondlist .g-main .g-sidebar .list li a {
+  background: url(../images/hl_sleft.png) no-repeat left center;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+.g-secondlist .g-main .g-sidebar .list li a:hover {
+  color: #000;
+}
+.g-secondlist .g-main .g-sidebar .hot {
+  width: 100%;
+  padding-top: 80px;
+}
+.g-secondlist .g-main .g-sidebar .hot .hot-list li {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  padding: 17px 0 17px 26px;
+  background: url(../images/hl_fire.png) no-repeat left center;
+  cursor: pointer;
+  border-bottom: 1px solid #e3e3e3;
+  margin-left: 2%;
+}
+.g-secondlist .g-main .g-container {
+  width: 73.16%;
+  margin-left: 21px;
+  float: left;
+  *display: inline;
+}
+.g-secondlist .g-main .g-container h3 {
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 25px;
+  color: #494444;
+  table-layout: fixed;
+  word-break: break-all;
+  overflow: hidden;
+}
+.g-secondlist .g-main .g-container .r-text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #454545;
+}
+.g-secondlist .g-main .g-container .r-text img {
+  max-width: 22px;
+  max-height: 22px;
+  position: relative;
+  top: 4px;
+}
+.g-secondlist .g-main .g-container .r-text span {
+  margin-left: 6px;
+}
+.g-secondlist .g-main .g-container .line {
+  border-top: 2px solid #fbfaf8;
+  margin-top: 21px;
+}
+.g-secondlist .g-main .g-container .g-page {
+  width: 100%;
+  margin: 30px 0;
+}
+.g-secondlist .g-main .g-container .g-page .pagelist {
+  width: 43.23%;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.g-secondlist .g-main .g-container .g-page .pagelist:before,
+.g-secondlist .g-main .g-container .g-page .pagelist:after {
+  content: "";
+  display: table;
+}
+.g-secondlist .g-main .g-container .g-page .pagelist:after {
+  clear: both;
+}
+.g-secondlist .g-main .g-container .g-page .pagelist li {
+  width: 10.25%;
+  float: left;
+  *display: inline;
+  margin-left: 15px;
+  color: #454545;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+.g-secondlist .g-main .g-container .g-page .pagelist .pageactive {
+  background: #fdc101;
+  color: #ffffff;
+}
+@media screen and (max-width: 1004px) and (min-width: 960px) {
+  .g-secondlist .g-main .g-sidebar h3 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .g-secondlist .g-main .g-sidebar .list .title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .g-secondlist .g-main .g-sidebar .list li a {
+    font-size: 14px;
+  }
+  .g-secondlist .g-main .g-sidebar .hot .hot-list li {
+    font-size: 15px;
+  }
+  .g-secondlist .g-main .g-container h3 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .g-secondlist .g-main .g-container .r-text {
+    margin-top: 15px;
+  }
+  .g-secondlist .g-main .g-container .r-text span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .g-secondlist .g-main .g-sidebar {
+    float: none;
+    width: 95%;
+  }
+  .g-secondlist .g-main .g-sidebar .hot {
+    padding-top: 30px;
+  }
+  .g-secondlist .g-main .g-container {
+    float: none;
+    width: 95%;
+    margin-top: 4%;
+  }
+  .g-secondlist .g-main .g-container h3 {
+    text-align: center;
+  }
+  .g-secondlist .g-main .g-container .g-page .pagelist {
+    width: 62.23%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .g-secondlist .g-main .g-container .g-page .pagelist {
+    width: 62.23%;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 480px) {
+  .g-secondlist .g-main .g-container h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .g-secondlist .g-main .g-container .r-text {
+    margin-top: 10px;
+  }
+  .g-secondlist .g-main .g-container .r-text img {
+    max-width: 16px;
+    max-height: 16px;
+    top: 2px;
+  }
+  .g-secondlist .g-main .g-container .r-text span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .g-secondlist .g-main .g-container .g-page .pagelist {
+    width: 85.23%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .g-secondlist .g-main .g-sidebar {
+    width: 89%;
+  }
+  .g-secondlist .g-main .g-container {
+    width: 89%;
+  }
+  .g-secondlist .g-main .g-container h3 {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .g-secondlist .g-main .g-container .r-text {
+    margin-top: 10px;
+  }
+  .g-secondlist .g-main .g-container .r-text img {
+    max-width: 16px;
+    max-height: 16px;
+    top: 2px;
+  }
+  .g-secondlist .g-main .g-container .r-text span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .g-secondlist .g-main .g-container .g-page .pagelist {
+    width: 85.23%;
+  }
+}

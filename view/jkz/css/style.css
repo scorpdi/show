@@ -1,0 +1,673 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details,img{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#666;outline:0;}
+body{background:#bcc0cd;}
+a,a:hover{color:#333;}
+
+
+.f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.f-cb,.f-cbli li{zoom:1;}
+.g-doc,body,html{
+    width: 100%;
+    height: 100%;
+    font-family: "Microsoft Yahei" ;
+    overflow: hidden;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    background: #a8ecf6;
+}
+.g-doc{
+    position: relative;
+    background: url("https://gw.alicdn.com/tps/TB1UwTCLXXXXXa4XpXXXXXXXXXX-640-1136.jpg");
+    background-size: 100% 100%;
+}
+
+.m-top{
+    position: absolute;
+    width: 13.1rem;
+    height: 7.6rem;
+    top: 9.7%;
+    left: 50%;
+    margin-left: -6.55rem;
+    background: url("https://gw.alicdn.com/tps/TB1BvnxLXXXXXcgXpXXXXXXXXXX-523-303.png");
+    background-size: 100% 100%;
+}
+.u-head{
+    position: absolute;
+    width: 3.3rem;
+    height: 2.35rem;
+    top:63%;
+    right: 31%;
+    z-index: 90;
+    background: url("https://gw.alicdn.com/tps/TB1ZXEXLXXXXXaXaXXXXXXXXXXX-132-94.png");
+    background-size: 100% 100%;
+    -webkit-animation: hands 2s ease 0s infinite;
+    animation: hands 2s ease 0s infinite;
+}
+@-webkit-keyframes hands /* Safari 和 Chrome */
+{
+    0%,100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50%{
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity:0;
+    }
+}
+@keyframes hands
+{
+    0%,100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50%{
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity:0;
+    }
+}
+.u-zhi{
+    position: absolute;
+    width: 4.25rem;
+    height: 1.45rem;
+    top: 3%;
+    left: 50%;
+    z-index: 60;
+    margin-left: -2.125rem;
+    background: url("https://gw.alicdn.com/tps/TB1LhDlLXXXXXcOXVXXXXXXXXXX-170-58.png");
+    background-size: 100% 100%;
+}
+/*飘钱*/
+.m-sanq{
+    z-index: 30;
+}
+.m-sanq .u-qian1{
+    position: absolute;
+    width: 3.22rem;
+    height: 1rem;
+    left: 9%;
+    top: 14%;
+    background: url("https://gw.alicdn.com/tps/TB1qfFRLpXXXXbgXFXXXXXXXXXX-209-121.png");
+    background-size: 100% 100%;
+    opacity: 0;
+}
+.j-anim .u-qian1{
+    -webkit-animation: qian1 .5s ease-out 0s;
+    animation: qian1 .5s ease-out 0s;
+}
+@-webkit-keyframes qian1 /* Safari 和 Chrome */
+{
+    0%{
+        -webkit-transform: skew(0deg) scale(1);
+        transform: skew(0deg) scale(1);
+    }
+    50%{
+        -webkit-transform: skew(10deg) scale(1);
+        transform: skew(10deg) scale(1);
+        opacity: 1;
+    }
+    100%{
+        left: 2%;
+        top: 30%;
+        width: 5.22rem;
+        height: 3rem;
+        -webkit-transform: skew(-20deg) scale(1);
+        transform: skew(-20deg) scale(1);
+        opacity: 0;
+
+    }
+}
+@keyframes qian1
+{
+    0%{
+        -webkit-transform: skew(0deg) scale(1);
+        transform: skew(0deg) scale(1);
+    }
+    50%{
+        -webkit-transform: skew(10deg) scale(1);
+        transform: skew(10deg) scale(1);
+        opacity: 1;
+    }
+    100%{
+        left: 2%;
+        top: 30%;
+        width: 5.22rem;
+        height: 3rem;
+        -webkit-transform: skew(-20deg) scale(1);
+        transform: skew(-20deg) scale(1);
+        opacity: 0;
+
+    }
+}
+.m-sanq .u-qian2{
+    position: absolute;
+    width: 2.16rem;
+    height: 2.9rem;
+    right: 40%;
+    top: 20%;
+    background: url("https://gw.alicdn.com/tps/TB1kb0TLpXXXXahXFXXXXXXXXXX-131-116.png");
+    background-size: 100% 100%;
+    opacity: 0;
+}
+.j-anim .u-qian2{
+    -webkit-animation: qian2 2s ease-out 0s;
+    animation: qian2 2s ease-out 0s;
+}
+@-webkit-keyframes qian2 /* Safari 和 Chrome */
+{
+    0%{
+        -webkit-transform: skew(0deg) scale(1) rotate(0deg);
+        transform: skew(0deg) scale(1) rotate(0deg);
+    }
+    100%{
+        right: 10%;
+        top: 60%;
+        -webkit-transform: skew(30deg) scale(1) rotate(-200deg);
+        transform: skew(30deg) scale(1) rotate(-200deg);
+        opacity: 1;
+    }
+}
+@keyframes qian2
+{
+    0%{
+        -webkit-transform: skew(0deg) scale(1) rotate(0deg);
+        transform: skew(0deg) scale(1) rotate(0deg);
+        z-index: 50;
+    }
+    100%{
+        right: 10%;
+        top: 60%;
+        -webkit-transform: skew(30deg) scale(1) rotate(-200deg);
+        transform: skew(30deg) scale(1) rotate(-200deg);
+        opacity: 1;
+        z-index: 99;
+    }
+}
+.m-sanq .u-qian3{
+    position: absolute;
+    width: 3.4rem;
+    height: 2.32rem;
+    left: 14%;
+    top: 34%;
+    background: url("https://gw.alicdn.com/tps/TB1OfxyLpXXXXa6apXXXXXXXXXX-136-93.png");
+    background-size: 100% 100%;
+    opacity: 0;
+}
+.j-anim .u-qian3{
+    -webkit-animation: qian3 1s ease-out 0s;
+    animation: qian3 1s ease-out 0s;
+}
+@-webkit-keyframes qian3 /* Safari 和 Chrome */
+{
+    0%{
+        left: 28%;
+        top: 34%;
+        z-index: 50;
+        -webkit-transform: skew(0deg) scale(1) rotate(0deg);
+        transform: skew(0deg) scale(1) rotate(0deg);
+    }
+    100%{
+        left: 9%;
+        top: 70%;
+        opacity: .7;
+        z-index: 99;
+        -webkit-transform: skew(0deg) scale(1) rotate(180deg);
+        transform: skew(0deg) scale(1) rotate(180deg);
+    }
+}
+@keyframes qian3
+{
+    0%{
+        left: 28%;
+        top: 34%;
+        z-index: 50;
+        -webkit-transform: skew(0deg) scale(1) rotate(0deg);
+        transform: skew(0deg) scale(1) rotate(0deg);
+    }
+    100%{
+        left: 9%;
+        top: 70%;
+        opacity: .7;
+        z-index: 99;
+        -webkit-transform: skew(0deg) scale(1) rotate(180deg);
+        transform: skew(0deg) scale(1) rotate(180deg);
+    }
+}
+.m-sanq .u-qian4{
+    position: absolute;
+    width: 2.16rem;
+    height: 2.9rem;
+    right: 20%;
+    top: 10%;
+    background: url("https://gw.alicdn.com/tps/TB1cy0TLpXXXXXNXFXXXXXXXXXX-139-238.png");
+    background-size: 100% 100%;
+    opacity: 0;
+}
+.j-anim .u-qian4{
+    -webkit-animation: qian4 .5s ease-out 0s;
+    animation: qian4 .5s ease-out 0s;
+}
+@-webkit-keyframes qian4 /* Safari 和 Chrome */
+{
+    100%{
+        right: 10%;
+        top: 40%;
+        opacity: .7;
+    }
+}
+@keyframes qian4
+{
+    100%{
+        right: 10%;
+        top: 40%;
+        opacity: .7;
+
+    }
+}
+
+
+
+.m-middle{
+    position: absolute;
+    width: 11.25rem;
+    height: 4rem;
+    top: 39%;
+    left: 50%;
+    margin-left: -5.625rem;
+    text-align: center;
+    line-height: 1.5rem;
+
+}
+.m-middle p{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: .75rem;
+    color:#0398ab;
+}
+.m-middle .m-numb{
+    position: relative;
+    width: 7rem;
+    height: 1.5rem;
+    padding-left: 2.5rem;
+    margin: 0 auto;
+    color: #fff;
+    font-size: .75rem;
+    background: #29b9ce;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+}
+.m-middle .m-numb span{
+    position: absolute;
+    width: 1.82rem;
+    height: 2.1rem;
+    bottom:0;
+    left: .75rem;
+    background: url("https://gw.alicdn.com/tps/TB1n4nNLXXXXXXkXXXXXXXXXXXX-73-84.png");
+    background-size: 100% 100%;
+}
+.m-botton{
+    position: absolute;
+    width: 14.25rem;
+    height: 8.1rem;
+    left: 50%;
+    margin-left: -7.12rem;
+    bottom: 0;
+    background: url("https://gw.alicdn.com/tps/TB1AdLKLXXXXXXzXXXXXXXXXXXX-570-324.png");
+    background-size: 100% 100%;
+}
+.m-botton .m-bd{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.m-botton .m-bd .m-gui{
+    position: absolute;
+    width: 100%;
+    height: 4.15rem;
+    bottom: 0;
+    background: url("https://gw.alicdn.com/tps/TB1.SvcLXXXXXaAapXXXXXXXXXX-570-166.png");
+    background-size: 100% 100%;
+}
+.m-botton .m-bd .m-gui a{
+    display: block;
+    width: 2.7rem;
+    height: 1rem;
+    margin: 2.5rem 0 0 6rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.m-botton .m-jkj{
+    position: absolute;
+    width: 10rem;
+    height: 20rem;
+    top: -3.2rem;
+    left: 50%;
+    margin-left: -5rem;
+}
+.m-jkj .u-zg{
+    position: absolute;
+    width: 10rem;
+    height: 20rem;
+    top: 0;
+
+    background: url("https://gw.alicdn.com/tps/TB1q8TpLXXXXXXqXVXXXXXXXXXX-401-798.png");
+    background-size: 100% 100%;
+}
+.m-jkj .u-zg1{
+    /*top: -3.2rem;*/
+    top:0;
+}
+.m-jkj .u-zg2{
+    top: .5rem;
+}
+.m-jkj .u-zg3{
+    top: 1rem;
+}
+.m-jkj .u-zg4{
+    top: 1rem;
+}
+.m-youtime{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left:50%;
+    margin-left: -4.4rem;
+    width: 6.375rem;
+    height: 2.425rem;
+    line-height: 2.425rem;
+    padding-left: 2.425rem;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #fff;
+    background: #ffa66a;
+    border-radius: 1.3rem;
+    -moz-border-radius: 1.3rem;
+    -webkit-border-radius: 1.3rem;
+    z-index: 98;
+}
+.m-youtime span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.325rem;
+    height: 2.425rem;
+    padding-left: .1rem;
+    color: #ffa66a;
+    text-align: center;
+    line-height: 2.425rem;
+    font-size: .7rem;
+    background: url("https://gw.alicdn.com/tps/TB1LUZfLXXXXXXVXpXXXXXXXXXX-97-97.png");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.u-disap{
+    -webkit-animation: car 1s ease-out 0s forwards;
+    animation: car 1s ease-out 0s forwards;
+}
+@-webkit-keyframes car /* Safari 和 Chrome */
+{
+    0%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+}
+@keyframes car
+{
+    0%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+}
+
+.m-sec2 .m-resule{
+    position: absolute;
+    width: 13.02rem;
+    height: 11.52rem;
+    padding-top: 1.5rem;
+    top: 7%;
+    left: 50%;
+    margin-left: -6.5rem;
+    background: url("https://gw.alicdn.com/tps/TB1IjE.LXXXXXcCXpXXXXXXXXXX-523-523.png");
+    background-size: 100% 100%;
+}
+.m-sec2 .m-resule p{
+    font-size: .75rem;
+    color: #0398ab;
+    text-align: center;
+    padding-bottom: .1rem;
+}
+.m-sec2 .m-resule .f-fc1{
+    color: #fff;
+    font-size: 1.67rem;
+}
+.m-sec2 .m-resule .f-fs1{
+    font-size: .55rem;
+}
+.m-btns{
+    position: absolute;
+    width: 11rem;
+    height: 1.7rem;
+    left: 50%;
+    margin-left: -5.2rem;
+    top: 54%;
+}
+.m-btns a{
+    display: block;
+    float: left;
+    height: 1.6rem;
+    width: 4.9rem;
+    line-height: 1.6rem;
+    border: 1px solid #0398ab;
+    -webkit-border-radius: .4rem;
+    border-radius: .4rem;
+    text-align: center;
+    font-size: .7rem;
+    color: #0398ab;
+    margin-right: .21rem;
+
+}
+.m-coupon{
+    width: 13.65rem;
+    position: absolute;
+    /*height: 2rem;*/
+    top: 62%;
+    left: 50%;
+    margin-left: -6.825rem;
+}
+.m-coupon .m-bd{
+    padding-top: .4rem;
+}
+.m-coupon .u-tt,.m-ft .u-tt{
+    font-size: .6rem;
+    text-align: center;
+    color:#838181;
+}
+
+.m-coupon .m-bd .u-quan{
+    float: left;
+    width: 4.25rem;
+    height: 2.625rem;
+    padding-right: 2rem;
+    padding-left: .4rem;
+    padding-top: .2rem;
+    font-size: .45rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    overflow: hidden;
+
+}
+.m-coupon .m-bd .u-quan1{
+    margin-right: .2rem;
+    background: url("https://gw.alicdn.com/tps/TB1Wg75LXXXXXb0XFXXXXXXXXXX-266-113.png");
+    background-size: 100% 100%;
+}
+.m-coupon .m-bd .u-quan2{
+    background: url("https://gw.alicdn.com/tps/TB1ndsMLXXXXXasapXXXXXXXXXX-266-113.png");
+    background-size: 100% 100%;
+}
+.m-coupon .u-quan .u-pic{
+    font-size: .6rem;
+    color: #fff;
+    line-height: 1.2rem;
+}
+.m-coupon .u-quan .u-tt2{
+    color: #d44758;
+    line-height: .6rem;
+}
+.m-ft{
+    position: absolute;
+    width: 15.4rem;
+    top:90%;
+    left: 50%;
+    margin-left: -7.7rem;
+}
+.m-ft .m-bd .u-tt{
+    text-align: center;
+}
+.m-ft .u-tt{
+    padding-bottom: .25rem;
+}
+/*------蒙层----*/
+.m-mark{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: #000;
+    opacity: 0.5;
+}
+/*----------------  弹窗部分  ------------------------*/
+.m-pop{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 99;
+    margin-top: -7.25rem;
+    margin-left: -7.09rem;
+    background: #3fb8c5;
+    border-radius: .375rem;
+    -moz-border-radius: .375rem;
+    -webkit-border-radius: .375rem;
+}
+.m-pop .m-bd{
+    width: 88%;
+    margin: 0 auto;
+}
+.m-pop .u-share{
+    display: block;
+    width: 6.34rem;
+    height: 1.6rem;
+    margin: .7rem auto 0;
+    background: url("https://gw.alicdn.com/tps/TB11UoZLXXXXXb2XVXXXXXXXXXX-254-63.png");
+    background-size: 100% 100%;
+}
+.m-pop .u-ture{
+    display: block;
+    width: 6.34rem;
+    height: 1.6rem;
+    margin: .7rem auto 0;
+    background: url("https://gw.alicdn.com/tps/TB1AIwSLXXXXXcfaXXXXXXXXXXX-254-63.png");
+    background-size: 100% 100%;
+}
+.m-pop1{
+    width: 14.18rem;
+    height: 12.5rem;
+}
+.m-pop1 .m-bd{
+    position: relative;
+    padding: 1.5rem 0 0;
+}
+.m-pop2,.m-pop3,.m-pop4,.m-pop5,.m-pop6,.m-pop7{
+    width:10.8rem;
+    height: 6.4rem;
+    margin-left: -5.4rem;
+    margin-top: -3.2rem;
+}
+.m-pop2 .m-bd,.m-pop3 .m-bd,.m-pop4 .m-bd,.m-pop5 .m-bd,.m-pop6 .m-bd,.m-pop7 .m-bd{
+    width: 100%;
+    padding-top: 1.6rem;
+}
+.m-pop2 p,.m-pop3 p,.m-pop4 p,.m-pop5 p,.m-pop6 p,.m-pop7 p{
+    text-align: center;
+    color: #fff;
+    font-size: .55rem;
+    line-height: .75rem;
+}
+.u-close{
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    right: -.6rem;
+    top: -.6rem;
+    background: url("https://gw.alicdn.com/tps/TB1TMfoLXXXXXcEaXXXXXXXXXXX-48-48.png");
+    background-size: 100% 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.m-pop1 .m-bd .u-tt{
+    padding-left: 0;
+}
+.m-pop1 .m-bd p{
+    position: relative;
+    font-size: .52rem;
+    line-height: .7rem;
+    color: #fefefe;
+    padding-bottom: .5rem;
+    padding-left: .9rem;
+    text-align:justify;
+    text-justify:inter-ideograph;
+}
+.m-pop1 .m-bd span{
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #4ccedd;
+    background: #d2f9ff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+}

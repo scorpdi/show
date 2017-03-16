@@ -1,0 +1,1742 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阿里巴巴国际站用户专享贷款-网商贷</title>
+    <style>
+        /* reset */
+        html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+        header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+        table{border-collapse:collapse;border-spacing:0;}
+        caption,th{text-align:left;font-weight:normal;}
+        html,body,fieldset,img,iframe,abbr{border:0;}
+        i,cite,em,var,address,dfn{font-style:normal;}
+        [hidefocus],summary{outline:0;}
+        li{list-style:none;}
+        h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+        sup,sub{font-size:83%;}
+        pre,code,kbd,samp{font-family:inherit;}
+        q:before,q:after{content:none;}
+        textarea{overflow:auto;resize:none;}
+        label,summary{cursor:default;}
+        a,button{cursor:pointer;}
+        h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+        del,ins,u,s,a,a:hover{text-decoration:none;}
+        body,textarea,input,button,select,keygen,legend{font:12px/1.14 Helvetica,PingFang,Hiragino Sans,Microsoft YaHei,\5b8b\4f53;color:#333;outline:0;}
+        body{background:#fff;}
+        a,a:hover{color:#333;}
+
+        /*清浮动*/
+        .f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+        .f-cb,.f-cbli li{zoom:1;}
+
+        /*图表部分*/
+        .m-chart,.m-chart input{
+            width: 100%;
+            background: #fff;
+            font-size: 16px;
+            font-family: Helvetica,PingFang,Hiragino Sans,Microsoft YaHei;
+        }
+        .m-chart .m-cn{
+            width: 1190px;
+            margin: 0 auto;
+            height: 432px;
+            padding-top: 110px;
+        }
+        .m-chart .calculator{
+            float: left;
+            width: 450px;
+            height: 400px;
+            color: #383838;
+            padding-left: 50px;
+        }
+        .m-chart .calculator h2{
+            font-size: 34px;
+            font-weight: normal;
+            padding-bottom: 40px;
+        }
+        .m-chart .calculator .u-label,.m-chart .calculator .u-frame{
+            float: left;
+        }
+        .m-chart .calculator .u-label{
+            height: 47px;
+            width: 64px;
+            line-height: 47px;
+            font-size: 16px;
+            padding-right: 10px;
+            text-align: right;
+        }
+        .m-chart .calculator .u-frame{
+            border: 1px solid #b6cdcf;
+            padding-right: 13px;
+        }
+        .m-chart .calculator .u-frame.j_loan{
+            margin-top: 4px;
+        }
+
+        .m-chart .calculator .m-catr{
+            width: 380px;
+        }
+        .m-chart .calculator .m-line{
+            position: relative;
+            padding-bottom: 20px;
+        }
+        .m-chart .calculator .m-line span{
+            position: absolute;
+            top: 50px;
+            left: 77px;
+            height: 20px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #fd8a02;
+        }
+
+        .m-chart .calculator .u-frame input{
+            float: left;
+            border: none;
+            width: 200px;
+            height: 45px;
+            line-height: 45px;
+            padding: 0 20px;
+            color: #000;
+            font-size: 16px;
+        }
+        .m-chart .calculator .u-frame .u-dw{
+            float: left;
+            height: 45px;
+            width: 32px;
+            text-align: center;
+            line-height: 45px;
+        }
+        .m-chart .calculator .u-frame .u-dw a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .m-chart .calculator .u-frame .u-dw img{
+            margin: 18px auto 0;
+
+        }
+        .m-chart .calculator .u-frame .u-select{
+            float: left;
+            width: 200px;
+            height: 45px;
+            line-height: 45px;
+            padding: 0 20px;
+        }
+        .m-chart .calculator .u-frame select{
+            border: none;
+            width: 282px;
+            height: 45px;
+            padding-left: 20px;
+            line-height: 45px;
+            font-size: 16px;
+        }
+        .m-chart .calculator .u-frame .u-btn{
+            float: left;
+            display: block;
+            width: 142px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+        }
+        .m-chart .calculator .u-frame .u-btn.active{
+            background: #00a2ac;
+            color: #fff;
+        }
+
+        .m-chart .calculator .m-line .m-select{
+            position: absolute;
+            display: none;
+            top: 46px;
+            left: 74px;
+            width: 285px;
+            border: 1px solid #b6cdcf;
+            z-index: 50;
+            background: #fff;
+        }
+        .m-chart .calculator .m-line .m-select li{
+            line-height: 25px;
+            padding-left: 20px;
+            cursor:pointer
+        }
+        .m-chart .calculator .m-line .m-select li:hover{
+            background: #ccc;
+
+        }
+        .m-chart .calculator .u-form{
+            float: left;
+            display: block;
+            width: 140px;
+            height: 37px;
+            line-height: 37px;
+            border: 2px solid #00a2ac;
+            border-radius: 20px;
+            text-align: center;
+            color: #00a2ac;
+        }
+        .m-chart .calculator .u-form:hover{
+            color: #fff;
+            background: #00a2ac;
+        }
+        .m-chart .detail{
+            float: left;
+            /*width: 650px;*/
+            padding-left: 50px;
+        }
+        #canvas{
+            width: 560px;
+            height: 200px;
+            padding-top: 20px;
+        }
+        .m-chart .detail .u-smg{
+            font-size: 14px;
+            color: #383838;
+            text-align: center;
+            z-index: 100;
+        }
+        .m-chart .detail .u-title{
+            padding-left: 40px;
+            letter-spacing: 2px;
+        }
+        .m-chart .detail .u-title span{
+            color: #fb6547;
+            font-size: 30px;
+        }
+
+        /*end 图表部分*/
+
+        /*底部部分*/
+        .g-centent{
+            font-family: Helvetica,PingFang,Hiragino Sans,Microsoft YaHei;
+        }
+        .m-third{
+            width:100%;
+            height:527px;
+            background: url("https://img.alicdn.com/tps/TB1yiHROXXXXXakXpXXXXXXXXXX-1920-527.jpg") no-repeat center top;
+        }
+        .wb-ct{
+            width:1190px;
+            margin:0 auto;
+        }
+        .wb-bottom img{
+            display: block;
+        }
+        .m-third h1{
+            font-size: 38px;
+            line-height: 49px;
+            padding-top: 67px;
+            color: #383838;
+            font-weight:normal;
+            text-align: center;
+        }
+        .m-third h2{
+            font-size: 14px;
+            line-height: 31px;
+            padding-bottom: 40px;
+            color: #4c4c4c;
+            font-weight:normal;
+            text-align: center;
+        }
+        .m-third ul{
+            text-align: center;
+        }
+        .m-third ul li{
+            width:379px;
+            height:279px;
+            display: inline-block;
+            background: url("https://img.alicdn.com/tps/TB1FRCuOpXXXXb.apXXXXXXXXXX-379-279.png") no-repeat center top;
+            position: relative;
+        }
+        .m-third .wb-num{
+            display: block;
+            width:62px;
+            height:62px;
+            color:#00a2ac;
+            font-size: 18px;
+            line-height: 62px;
+            background: url("https://img.alicdn.com/tps/TB1apYPOXXXXXbhXpXXXXXXXXXX-62-63.png") no-repeat center top;
+            text-align: center;
+            font-weight: 700;
+            position: absolute;
+            left:-17px;
+            top:-17px;
+        }
+        .m-third .wb-mainimg{
+            margin:0 auto;
+            padding-top:25px;
+            display: block;
+        }
+        .m-third .wb-txt{
+            width:273px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            padding:16px 53px 0 53px;
+            height:56px;
+        }
+        .m-third .wb-txt span{
+            vertical-align: middle;
+            display: block;
+            font-size: 16px;
+            color:#383838;
+            line-height: 28px;
+        }
+        .m-third .wb-txt span img{
+            vertical-align:text-top;
+            cursor:pointer;
+            text-align: center;
+        }
+        .m-third .wb-txt i{
+            position: relative;
+            top:4px;
+        }
+        .m-third .wb-txt em{
+            display: block;
+            width:364px;
+            height:54px;
+            color:#383838;
+            font-size: 16px;
+            line-height: 46px;
+            text-align: center;
+            background: url("https://img.alicdn.com/tps/TB1JQzWOXXXXXXAXpXXXXXXXXXX-364-54.png") no-repeat center top;
+            position: absolute;
+            left:-195px;
+            top:-53px;
+            display: none;
+        }
+        .m-third .wb-txt i:hover em{
+            display: block;
+        }
+        .m-third .wb-txt a{
+            color:#3cc5ff;
+        }
+        .m-four{
+            width:100%;
+            background: url("https://img.alicdn.com/tps/TB1dlIdOXXXXXXJXXXXXXXXXXXX-1920-510.jpg") no-repeat center bottom #ffffff;
+        }
+        .m-four h1{
+            font-size: 32px;
+            line-height: 152px;
+            color: #383838;
+            font-weight:normal;
+            text-align: center;
+        }
+        .m-four ul{
+            width:1100px;
+            margin:0 auto;
+        }
+        .m-four li{
+            padding-bottom: 13px;
+        }
+        .m-four li.wb-li{
+            padding-bottom: 25px;
+        }
+        .m-four li span img{
+            margin-top:4px;
+        }
+        .m-four li span.wb-span img{
+            margin-top:3px;
+        }
+        .m-four li p{
+            font-size: 15px;
+            color:#383838;
+            float:right;
+            width:97%;
+            line-height: 26px;
+        }
+        .m-four li .wb-question{
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .m-four li p a{
+            color:#19bbff;
+        }
+        .m-four li span{
+            float:left;
+            width:2%;
+        }
+        .wb-more{
+            font-size:14px;
+            line-height: 174px;
+            color:#19bbff;
+            font-weight: 700;
+            text-align: center;
+        }
+        .wb-more a{
+            color:#19bbff;
+        }
+        .wb-more a span{
+            margin-right: 10px;
+        }
+        .wb-more img{
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+        .wb-bottom{
+            width:100%;
+            background: url("https://img.alicdn.com/tps/TB1x0HCOXXXXXbjapXXXXXXXXXX-1920-272.jpg") no-repeat center top;
+            border-bottom:1px solid #005658;
+        }
+        /*end 底部部分*/
+        .m-nav{
+            position: fixed;
+            top: 200px;
+            left: 50%;
+            margin-left: 610px;
+            background: red;
+            border: none;
+        }
+        .m-nav img{
+            display: block;
+        }
+        /*尾部样式*/
+        /*copyright*/
+        .foot-wrap {
+            background-color: #f8f8f8;
+            min-width: 990px;
+        }
+
+        .foot-content {
+            width: 990px;
+            margin: 0 auto;
+            padding: 30px 5px;
+            font-size: 14px;
+            line-height: 1.5;
+            *zoom: 1;
+            font-size: 12px;
+            line-height: 12px;
+            background-color: #f8f8f8;
+            background: url(https://os.alipayobjects.com/rmsportal/AfFplHSMsIUAFHH.png) right -1px no-repeat;
+        }
+        .foot-content a{
+            color: #333;
+            margin: 0 10px;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .foot-content a:hover{
+            color: #00C2C2;
+            line-height: 12px;
+            text-decoration: none;
+        }
+        .foot-content:before,
+        .foot-content:after {
+            display: table;
+            content: "";
+        }
+        .foot-content:after {
+            clear: both;
+        }
+        .foot-left {
+            float: left;
+            display: inline;
+        }
+        .foot-left img{
+            height: 26px;
+        }
+        .foot-right {
+            float: right;
+            display: inline;
+            text-align: right;
+        }
+        .foot-intro {
+            padding-top: 14px;
+            position: relative;
+            right: -10px;
+            color: #D6D6D6;
+        }
+        .foot-copyright {
+            padding-top: 20px;
+            line-height: 12px;
+            color: #333;
+        }
+        .foot-link {
+            position: relative;
+            left: -10px;
+            color: #D6D6D6;
+            padding-top: 18px;
+            line-height: 12px;
+        }
+        .copyright{
+            margin-right: 15px;
+        }
+        @media (min-width: 1200px) {
+            .foot-content{
+                /*width: 1190px;*/
+            }}
+        /*top.css*/
+        .g-centent{
+            width:100%;
+            overflow:hidden;
+            font-family:'Microsoft YaHei';
+        }
+        .m-first{
+            width:100%;
+        }
+        .m-banner{
+            position:relative;
+            width:1190px;
+            min-width:1190px;
+            height:435px;
+            margin:0 auto;
+        }
+        .m-slide{
+            position:absolute;
+            top:0;
+            left:50%;
+            width:1920px;
+            height:435px;
+            margin-left:-960px;
+            overflow:hidden;
+        }
+        .m-fixed{
+            position:absolute;
+            top:50px;
+            left:40px;
+            z-index:50;
+        }
+        .fixed-img{
+            margin-bottom: 10px;
+        }
+        .m-item{
+            color:#383838;
+            font-size:18px;
+            font-style:italic;
+            font-weight:700;
+            letter-spacing: 0.08em;
+        }
+        .m-item span{
+            display:inline-block;
+            *display:inline;
+            *zoom:1;
+            padding:7px 0 7px 10px;
+        }
+        .m-item em{
+            font-style:italic;
+            font-size:24px;
+            padding:0 5px;
+        }
+        .m-hlight{
+            color:#00a2ac;
+            font-weight:bolder;
+        }
+        .i-circle{
+            display:inline-block;
+            *display:inline;
+            *zoom:1;
+            width:5px;
+            height:5px;
+            background:url("https://img.alicdn.com/tps/TB1RSHmOXXXXXajapXXXXXXXXXX-5-5.png") no-repeat center center;
+            vertical-align:middle;
+        }
+        .m-region{
+            width:100%;
+            height:378px;
+            background:url("https://img.alicdn.com/tps/TB1cLDCOXXXXXXRaXXXXXXXXXXX-1920-378.jpg") no-repeat top center;
+        }
+        .m-layer{
+            width:1190px;
+            max-height:1190px;
+            margin:0 auto;
+
+        }
+        .m-boxwrap{
+            width:1220px;
+            padding-top:36px;
+            /*text-align:center;*/
+            z-index: 99;
+        }
+        .m-box{
+            position: relative;
+            float: left;
+            width: 580px;
+            height: 303px;
+            margin: 0 28px 0 0;
+            background: url(https://img.alicdn.com/tps/TB15gX1OpXXXXaRXXXXXXXXXXXX-580-303.jpg) no-repeat top center;
+            box-shadow: 2px 1px 6px #a0a0a0;
+        }
+        .m-title{
+            height:60px;
+            line-height:60px;
+            padding:0 15px;
+        }
+        .m-left{
+            float:left;
+            font-size:18px;
+            font-style:italic;
+            color:#383838;
+            font-weight: normal;
+        }
+        .m-dot{
+            font-style:normal;
+            padding:0 8px 0 10px;
+        }
+        .m-right{
+            float:right;
+            font-size:18px;
+            font-style:italic;
+            color:#383838;
+        }
+        .m-content i{
+            position: relative;
+            top:-5px;
+        }
+        .m-content i em{
+            display: block;
+            width:364px;
+            height:54px;
+            color:#383838;
+            font-size: 13px;
+            line-height: 46px;
+            text-align: center;
+            background: url("https://img.alicdn.com/tps/TB1JQzWOXXXXXXAXpXXXXXXXXXX-364-54.png") no-repeat center top;
+            position: absolute;
+            left:-195px;
+            top:-53px;
+            display: none;
+        }
+        .m-content i em a{
+            color:#383838;
+        }
+        .m-content i:hover em{
+            display: block;
+        }
+        .m-content a{
+            color:#3cc5ff;
+        }
+        .m-bold{
+            font-style:italic;
+            font-weight:bolder;
+        }
+        .m-green{
+            color:#00a2ac;
+            font-style:italic;
+            font-size:24px;
+            padding:0 5px;
+        }
+        .m-content{
+            float:left;
+            width:209px;
+            padding:22px 40px 0;
+        }
+        .m-content p{
+            width:209px;
+            text-align:center;
+            white-space:nowrap;
+            font-size:18px;
+            padding:12px 0;
+        }
+        .m-fig{
+            font-size:21px;
+            font-style:italic;
+            color:#00a2ac;
+            font-weight: normal;
+        }
+        .m-fg{
+            color:#00a2ac;
+            font-weight: normal;
+        }
+        .m-btn{
+            position:absolute;
+            top:241px;
+            left:194px;
+            display:block;
+            width:187px;
+            height:46px;
+            background:url("https://img.alicdn.com/tps/TB1XqBiOpXXXXcoapXXXXXXXXXX-187-43.png") no-repeat top center;
+            font-size:18px;
+            line-height:40px;
+            color:#fff;
+            font-weight:bold;
+            text-align:center;
+            letter-spacing: 2px
+        }
+        /*hl*/
+        .btn-left{
+            width: 18px;
+            height: 19px;
+            position:relative;
+            top:4px;left: 6px;
+        }
+        .btn-left1{
+            width: 18px;
+            height: 19px;
+            position:relative;
+            top:-28px;left: 62px;
+        }
+        /*hl-end*/
+        .m-btn:hover{
+            color:#fff;
+        }
+        .m-switch{
+            position:absolute;
+            right:12px;
+            bottom:14px;
+            font-size:14px;
+            color:#42c2ff;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .m-cover{
+            z-index:101;
+            display:none;
+            position:fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:#000;
+            filter:alpha(opacity=30);
+            background:rgba(0,0,0,.3);
+        }
+        .m-pop{
+            display:none;
+            z-index: 102;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 520px;
+            margin-left: -320px;
+            background: #fff;
+        }
+        .m-pop .m-btn{
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 20px auto 0;
+        }
+        .pop1{
+            padding:18px 60px 50px;
+            margin-top: -260px;
+        }
+        .pop2{
+            width:640px;
+            margin-top: -260px;
+        }
+        .pop2wrap{
+            padding:18px 60px 50px;
+        }
+        .m-pop img{
+            display: block;
+            margin:0 auto;
+        }
+        .pop-title{
+            font-size:24px;
+            color:#383838;
+            font-weight:400;
+            text-align:center;
+            padding:30px 0;
+        }
+        .m-closeBtn{
+            position:absolute;
+            top:20px;
+            right:20px;
+            cursor:pointer
+        }
+        .m-step{
+            position:relative;
+            width:100%;
+            height:66px;
+        }
+        .step{
+            position:absolute;
+            top:18px;
+            color:#383838;
+            display:block;
+            width:120px;
+            font-size:14px;
+            line-height: 20px;
+            text-align:center;
+            white-space:nowrap;
+        }
+
+        .step1{
+            left:-20px;
+        }
+        .step2{
+            left:198px;
+        }
+        .step3{
+            left:416px;
+        }
+        .step4{
+            left:-18px;
+        }
+        .step5{
+            left:89px;
+        }
+        .step6{
+            left:199px;
+        }
+        .step7{
+            left:309px;
+        }
+        .step8{
+            left:416px;
+        }
+        .pop-area{
+            text-align:center;
+            font-size:14px;
+            color:#383838;
+        }
+        .pop-tips{
+            background:#f1f9f9;
+            padding:26px 60px 26px;
+            font-size:14px;
+            color:#383838;
+            line-height:1.5;
+        }
+        /*slide style start*/
+
+        .bx-wrapper{position:relative;margin:0 auto 60px;padding:0}
+        .bx-wrapper img{max-width:100%;display:block}
+        .bx-wrapper .bx-viewport{-moz-box-shadow:0 0 5px #ccc;-webkit-box-shadow:0 0 5px #ccc;box-shadow:0 0 5px #ccc;border:5px solid #fff;left:-5px;background:#fff;-webkit-transform:translatez(0);-moz-transform:translatez(0);-ms-transform:translatez(0);-o-transform:translatez(0);transform:translatez(0)}
+        .bx-wrapper .bx-controls-auto,.bx-wrapper .bx-pager{position:absolute;bottom:-30px;width:100%}
+        .bx-wrapper .bx-loading{min-height:50px;background:url(https://img.alicdn.com/tps/TB16iXTKVXXXXbzapXXXXXXXXXX-96-63.png) center center no-repeat #fff;height:100%;width:100%;position:absolute;top:0;left:0;z-index:2000}
+        .bx-wrapper .bx-pager{text-align:center;font-size:.85em;font-family:Arial;font-weight:700;color:#666;padding-top:20px}
+        .bx-wrapper .bx-controls-auto .bx-controls-auto-item,.bx-wrapper .bx-pager .bx-pager-item{display:inline-block}
+        .bx-wrapper .bx-pager.bx-default-pager a{background:#666;text-indent:-9999px;display:block;width:10px;height:10px;margin:0 5px;outline:0;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+        .bx-wrapper .bx-pager.bx-default-pager a.active,.bx-wrapper .bx-pager.bx-default-pager a:hover{background:#000}
+        .bx-wrapper .bx-prev{left:10px;background:url(https://img.alicdn.com/tps/TB16iXTKVXXXXbzapXXXXXXXXXX-96-63.png) no-repeat 0 -32px}
+        .bx-wrapper .bx-next{right:10px;background:url(https://img.alicdn.com/tps/TB16iXTKVXXXXbzapXXXXXXXXXX-96-63.png) no-repeat -43px -32px}
+        .bx-wrapper .bx-prev:hover{background-position:0 0}
+        .bx-wrapper .bx-next:hover{background-position:-43px 0}
+        .bx-wrapper .bx-controls-direction a{position:absolute;top:50%;margin-top:-16px;outline:0;width:32px;height:32px;text-indent:-9999px;z-index:9999}
+        .bx-wrapper .bx-controls-direction a.disabled{display:none}
+        .bx-wrapper .bx-controls-auto{text-align:center}
+        .bx-wrapper .bx-controls-auto .bx-start{display:block;text-indent:-9999px;width:10px;height:11px;outline:0;background:url(https://img.alicdn.com/tps/TB16iXTKVXXXXbzapXXXXXXXXXX-96-63.png) -86px -11px no-repeat;margin:0 3px}
+        .bx-wrapper .bx-controls-auto .bx-start.active,.bx-wrapper .bx-controls-auto .bx-start:hover{background-position:-86px 0}
+        .bx-wrapper .bx-controls-auto .bx-stop{display:block;text-indent:-9999px;width:9px;height:11px;outline:0;background:url(https://img.alicdn.com/tps/TB16iXTKVXXXXbzapXXXXXXXXXX-96-63.png) -86px -44px no-repeat;margin:0 3px}
+        .bx-wrapper .bx-controls-auto .bx-stop.active,.bx-wrapper .bx-controls-auto .bx-stop:hover{background-position:-86px -33px}
+        .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{text-align:left;width:80%}
+        .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{right:0;width:35px}
+        .bx-wrapper .bx-caption{position:absolute;bottom:0;left:0;background:#666\9;background:rgba(80,80,80,.75);width:100%}
+        .bx-wrapper .bx-caption span{color:#fff;font-family:Arial;display:block;font-size:.85em;padding:10px}
+        .bx-wrapper .bx-viewport {-moz-box-shadow:0 0 0 #fff;-webkit-box-shadow:0 0 0 #fff;box-shadow:0 0 0 #fff;border:none;left:0;}
+        .m-slide .bx-wrapper .bx-pager.bx-default-pager a{width:42px;height:3px;background-color:#fff;}
+        .m-slide .bx-wrapper .bx-pager.bx-default-pager a:hover,
+        .m-slide .bx-wrapper .bx-pager.bx-default-pager a.active {background: #00b6c2;}
+        .m-slide .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{bottom:5px;z-index:100;}
+        .m-slide .bx-wrapper .bx-prev{left:50%;margin-left:-557px;}
+        .m-slide .bx-wrapper .bx-next{left:50%;margin-left:525px;}
+        .m-slide .bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item{display:inline-block;*display:inline;*zoom:1;  }
+        .m-slide .bx-wrapper .bx-viewport .slide1 .slide{width:1920px !important;}
+
+
+        /*1688样式*/
+        .m-region.m-region1{
+            height: 411px;
+            background: url("https://img.alicdn.com/tps/TB1CnXCOpXXXXa2XXXXXXXXXXXX-1920-411.jpg") no-repeat top center;
+        }
+        .m-fixed .u-kssq{
+            display: block;
+
+        }
+        .m-fixedt{
+            position: absolute;
+
+        }
+        /*页头 */
+        .fn-clear:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+
+        .fn-hide {
+            display: none;
+        }
+
+        .fn-left {
+            float: left;
+        }
+
+        .fn-right {
+            float: right;
+        }
+        .header {
+            z-index: 999;
+            height: 70px;
+            line-height: 70px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+
+        .header .header-nav {
+            width: 100%;
+            background-color: #fff;
+            background-color: rgba(255,255,255,.9);
+        }
+
+        .header .header-nav .header-nav-inner {
+            margin: 0 auto;
+            height: 60px;
+            line-height: 62px;
+            width: 1190px;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .header .header-nav .header-nav-inner .small-logo {
+            height: 20px;
+            width: 96px;
+        }
+
+        .header .header-inner-wrap {
+            margin: 0 auto;
+            min-width: 990px;
+            max-width: 1190px;
+        }
+
+        .header .logo {
+            margin-top: 15px;
+            margin-left: 10px;
+            width: 232px;
+            height: 38px;
+        }
+
+        .header .others {
+            height: 26px;
+            line-height: 26px;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        .header .others a {
+            float: left;
+            margin-top: 27px;
+            margin-right: 10px;
+            height: 16px;
+            line-height: 16px;
+            color: #333;
+        }
+        .header .others a .phone {
+            margin-right: 10px;
+            height: 16px;
+            width: 14px;
+        }
+        .header-navs{
+            background: #1bacc0;
+            height: 26px;
+            line-height: 26px;
+        }
+        .header-navs .header-cn{
+            width: 1190px;
+            margin: 0 auto;
+        }
+        .header-navs .header-cn .header-goback{
+            color: #fff;
+            padding-left: 10px;
+            line-height: 26px;
+        }
+    </style>
+</head>
+<body>
+<!-- 页 头 -->
+    <div class="header-navs">
+        <div class="header-cn">
+            <a class="header-goback" href="https://mybank.cn/" target="_blank">网商银行首页</a>
+        </div>
+    </div>
+    <div class="header">
+    <div class="header-inner-wrap fn-clear">
+        <p>
+            <img class="fn-left logo" src="https://img.alicdn.com/tps/TB1Xf9tOpXXXXctaFXXXXXXXXXX-232-38.jpg" width="232" height="38">
+        </p>
+        <div class="fn-right others fn-clear">
+            <a href="https://mobilehelp.mybank.cn/bkebank/index.htm#/knowledge/1689/1690?_k=h80fnb" target="_blank">帮助大厅</a>
+            <a href="javascript:void(0);"><img class="phone fn-left" src="https://img.alicdn.com/tps/TB16.HXLXXXXXcxXVXXXXXXXXXX-28-32.png">95188-3</a>
+        </div>
+    </div>
+</div>
+    <div class="g-centent">
+        <!--第一部分-->
+        <div class="m-first">
+            <div class="m-banner">
+                <div>
+                    <div class="m-slide f-cb">
+                        <div class="slide1">
+                            <div class="slide">
+                                <!--<a href="#">-->
+                                    <img src="https://img.alicdn.com/tps/TB1PuP3OXXXXXXoXXXXXXXXXXXX-1920-435.jpg" width="1920" height="435"/>
+                                <!--</a>-->
+                            </div>
+                            <!--<div class="slide">-->
+                                <!--<a href="#">-->
+                                    <!--<img src="https://img.alicdn.com/tps/TB1PuP3OXXXXXXoXXXXXXXXXXXX-1920-435.jpg" width="1920" height="435"/>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="slide">-->
+                                <!--<a href="#">-->
+                                    <!--<img src="https://img.alicdn.com/tps/TB1PuP3OXXXXXXoXXXXXXXXXXXX-1920-435.jpg" width="1920" height="435"/>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="slide">-->
+                                <!--<a href="#">-->
+                                    <!--<img src="https://img.alicdn.com/tps/TB1PuP3OXXXXXXoXXXXXXXXXXXX-1920-435.jpg" width="1920" height="435"/>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="m-fixed">
+                    <img src="https://img.alicdn.com/tps/TB1CV98OpXXXXcqXXXXXXXXXXXX-578-316.png" width="300" height="158" class="fixed-img">
+                    <p class="m-item"><i class="i-circle"></i><span>纯信用，0抵押，0担保</span></p>
+                    <p class="m-item"><i class="i-circle"></i><span>最快3分钟到账</span></p>
+                    <p class="m-item"><i class="i-circle"></i><span>日利率最低<em class="m-hlight">0.03%</em></span></p>
+                </div>
+            </div>
+            <div class="m-region">
+                <div class="m-layer">
+                    <div class="m-boxwrap f-cb">
+                        <div class="m-box">
+                            <h2 class="m-title f-cb">
+                                <span class="m-left">网商贷<em class="m-dot">·</em><em class="m-bold">快速版</em></span>
+                                <span class="m-right">最快<em class="m-green">3</em>分钟到账</span>
+                            </h2>
+                            <div class="f-cb">
+                                <div class="m-content">
+                                    <img src="https://img.alicdn.com/tps/TB1rF3QOXXXXXXbXpXXXXXXXXXX-209-82.jpg" width="209" height="82"/>
+                                    <p>最高额度<em class="m-fig">50万</em></p>
+                                </div>
+                                <div class="m-content">
+                                    <img src="https://img.alicdn.com/tps/TB1vbcjOXXXXXahapXXXXXXXXXX-209-82.jpg" width="209" height="82"/>
+                                    <p>在线申请 <em class="m-fg">最快3分钟到账</em></p>
+                                </div>
+                            </div>
+                            <a class="m-btn" target="_blank" data-href="https://loan.mybank.cn/loanportal/applyrd/loan.htm?site=4" seed="gjzJYQ">急用钱选我 <img src="https://img.alicdn.com/tps/TB1bQFpOpXXXXXIapXXXXXXXXXX-18-19.png" alt="" class="btn-left" /></a>
+                            <span class="m-switch J_switch1">未开放区域、流程</span>
+                        </div>
+                        <div class="m-box">
+                            <h2 class="m-title f-cb">
+                                <span class="m-left">网商贷<em class="m-dot">·</em><em class="m-bold">标准版</em></span>
+                                <span class="m-right">最高额度<em class="m-green">200</em>万</span>
+                            </h2>
+                            <div class="f-cb">
+                                <div class="m-content">
+                                    <img src="https://img.alicdn.com/tps/TB1rXsuOXXXXXbhaXXXXXXXXXXX-209-82.jpg" width="209" height="82"/>
+                                    <p>最高额度<em class="m-fig">200万</em>
+                                        <i>
+                                            <img src="https://img.alicdn.com/tps/TB13nviOXXXXXbqapXXXXXXXXXX-15-15.png" width="15" height="15">
+                                            <em><a href="#cjwt">在线申请最高额度100万，申请100万以上请咨询95188-3。</a></em>
+                                        </i>
+                                    </p>
+                                </div>
+                                <div class="m-content">
+                                    <img src="https://img.alicdn.com/tps/TB19YcKOXXXXXacXFXXXXXXXXXX-209-82.jpg" width="209" height="82"/>
+                                    <p>在线申请 <em class="m-fg">上门服务</em></p>
+                                </div>
+                            </div>
+                            <a class="m-btn" target="_blank" data-href="https://loan.mybank.cn/dk/b2bapply/credit/apply_form.htm?site=B2B_EN&channelId=ICBU_ONLINE_01&mlable=206banrsy" seed="gjzYDE">要大额选我 <img src="https://img.alicdn.com/tps/TB1bQFpOpXXXXXIapXXXXXXXXXX-18-19.png" alt="" class="btn-left" /></a>
+                            <span class="m-switch J_switch2">未开放区域、流程</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-cover"></div>
+        <div class="m-pop pop1">
+            <h2 class="pop-title">申请流程</h2>
+            <img src="https://img.alicdn.com/tps/TB1fe.eOXXXXXckXXXXXXXXXXXX-466-33.png" width="466" height="33">
+            <p class="m-step">
+                <span class="step step1">提交报名表</span>
+                <span class="step step2">贷款审核<br>(最快1分钟)</span>
+                <span class="step step3">在线签约</span>
+            </p>
+            <h2 class="pop-title">未开放区域</h2>
+            <p class="pop-area">西藏、新疆、内蒙、甘肃、宁夏、海南、青海、宁德、温州、神木、徐州、盐城、衢州、丽水、湖州、南平、东营、港澳台、海外</p>
+            <span class="m-closeBtn">
+                <img src="https://img.alicdn.com/tps/TB1L9_OOXXXXXXTXVXXXXXXXXXX-20-21.png" width="20" height="21" alt="closeBtn">
+            </span>
+            <a class="m-btn" target="_blank" data-href="https://loan.mybank.cn/loanportal/applyrd/loan.htm?site=4" seed="gjzJYQ1">急用钱选我 <img src="https://img.alicdn.com/tps/TB1bQFpOpXXXXXIapXXXXXXXXXX-18-19.png" alt="" class="btn-left1" /></a>
+        </div>
+        <div class="m-pop pop2">
+            <div class="pop2wrap">
+                <h2 class="pop-title">申请流程</h2>
+                <img src="https://img.alicdn.com/tps/TB1IYAcOXXXXXXrXpXXXXXXXXXX-466-33.png" width="466" height="33">
+                <p class="m-step">
+                    <span class="step step4">提交报名表</span>
+                    <span class="step step5">预审<br>(约2个工作日)</span>
+                    <span class="step step6">上门采集资料<br>(约2个工作日)</span>
+                    <span class="step step7">贷款审核<br>(约2个工作日)</span>
+                    <span class="step step8">在线签约</span>
+                </p>
+                <h2 class="pop-title">未开放区域</h2>
+                <p class="pop-area">西藏、新疆、青海、宁德、港澳台、海外</p>
+                <span class="m-closeBtn">
+                <img src="https://img.alicdn.com/tps/TB1L9_OOXXXXXXTXVXXXXXXXXXX-20-21.png" width="20" height="21" alt="closeBtn">
+                </span>
+            </div>
+            <p class="pop-tips">北京、天津、河北、江苏、浙江(除温州)、上海、广东、山东、西安市、郑州市、长沙市、武汉市地区的客户，可直接在线申请网商贷，由网商银行安排工作人员上门采集资料。除前述区域外的客户请联系您的阿里巴巴国际站客户经理提交网商贷申请。
+            <a class="m-btn" target="_blank" data-href="https://loan.mybank.cn/dk/b2bapply/credit/apply_form.htm?site=B2B_EN&channelId=ICBU_ONLINE_01&mlable=206banrsy" seed="gjzYDE1">要大额选我 <img src="https://img.alicdn.com/tps/TB1bQFpOpXXXXXIapXXXXXXXXXX-18-19.png" alt="" class="btn-left1" /></a>
+            </p>
+        </div>
+
+        <!--end-->
+
+        <!-- 图表部分 -->
+        <div class="m-chart">
+            <div class="m-cn f-cb">
+                <div class="calculator">
+                    <h2>算一算，利息更明了</h2>
+                    <div class="m-catr">
+                        <div class="m-line f-cb">
+                            <div class="u-label">贷款金额</div>
+                            <div class="u-frame">
+                                <input class="j_mymoney" type="text" value="10"/><div class="u-dw">万元</div>
+                            </div>
+                            <span class="j-tishi" style="display: none">申贷额度2-200万</span>
+                        </div>
+                        <div class="m-line f-cb">
+                            <div class="u-label">会员类型</div>
+                            <div class="u-frame">
+                                <div class="u-select"></div>
+                                <div class="u-dw">
+                                    <a href="javascript:void(0)" class="j_select">
+                                        <img src="https://img.alicdn.com/tps/TB1bMY8OXXXXXchXpXXXXXXXXXX-15-8.jpg" width="15" height="8" alt=""/>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="m-select"></ul>
+                        </div>
+                        <div class="m-line f-cb">
+                            <div class="u-label">日&nbsp;&nbsp;利&nbsp;率</div>
+                            <div class="u-frame j_loan" style="padding: 0">
+                                <a class="u-btn active" href="javascript:void (0)"></a>
+                                <a class="u-btn" href="javascript:void (0)"></a>
+                            </div>
+                        </div>
+                        <div class="m-line f-cb">
+                            <div class="u-label"></div>
+                            <a class="u-form j_form" href="javascript:void (0)">算一算</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="u-title"></div>
+                    <div id="canvas"></div>
+                    <div class="u-smg">* 以贷款12个月、等额本金还款方式计算，具体金额请以实际利率为准</div>
+                </div>
+            </div>
+        </div>
+        <!--end 图表部分-->
+        <!--第三部分-->
+        <div class="m-third">
+            <div class="wb-ct">
+                <h1>我能否申请网商贷？</h1>
+                <h2>同时满足以下3个条件，即可进行申请</h2>
+                <ul>
+                    <li>
+                        <span class="wb-num">1</span>
+                        <img class="wb-mainimg" src="https://img.alicdn.com/tps/TB1n8WDOpXXXXaAXXXXXXXXXXXX-654-305.jpg" width="328" height="154" />
+                        <p class="wb-txt">
+                            <span>企业法定代表人或个体工商户负责人</span> <span>18～65周岁的中国大陆居民</span>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="wb-num">2</span>
+                        <img class="wb-mainimg" src="https://img.alicdn.com/tps/TB1_V6NOXXXXXcdXpXXXXXXXXXX-328-154.png" width="328" height="154" />
+                        <p class="wb-txt">
+                            <span>企业工商注册时间满1年</span>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="wb-num">3</span>
+                        <img class="wb-mainimg" src="https://img.alicdn.com/tps/TB1aUPyOXXXXXapXVXXXXXXXXXX-328-154.png" width="328" height="154" />
+                        <p class="wb-txt">
+                            <span>
+                                阿里巴巴国际站付费会员
+                                <i>
+                                    <img src="https://img.alicdn.com/tps/TB13nviOXXXXXbqapXXXXXXXXXX-15-15.png" width="15" height="15" />
+                                    <em>还不是阿里巴巴国际站会员？<a data-href="https://fuwu.alibaba.com/export_hand.htm" target="_blank" seed="gjzLJJR">立即加入</a></em>
+                                </i>
+                                、网商贷续贷会员
+                                <i>
+                                    <img src="https://img.alicdn.com/tps/TB13nviOXXXXXbqapXXXXXXXXXX-15-15.png" width="15" height="15" />
+                                    <em>有过历史支用记录的国际站付费、免费会员</em>
+                                </i>
+                                、一达通会员
+                                <i>
+                                    <img src="https://img.alicdn.com/tps/TB13nviOXXXXXbqapXXXXXXXXXX-15-15.png" width="15" height="15" />
+                                    <em>一达通需走完过一单，有过交易的会员</em>
+                                </i>
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="m-four" id="cjwt">
+            <div class="wb-ct">
+                <h1>常见问题</h1>
+                <ul>
+                    <!-- 问答开始 -->
+                    <li class="f-cb">
+                        <span class="wb-span">
+                            <img src="https://img.alicdn.com/tps/TB14JeeOpXXXXX9XVXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p class="wb-question">还款方式、贷款期限是什么？</p>
+                    </li>
+                    <li class="f-cb wb-li">
+                        <span>
+                            <img src="https://img.alicdn.com/tps/TB1vy9fOpXXXXcpXFXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p>网商贷－快速版：等额本金还款方式，贷款期限12个月，每月分期还款，分摊还款压力。<br>
+                            网商贷－标准版：等额本金/一次还本/随借随还的还款方式，贷款期限6个月/12个月/24个月，具体能获得的还款方式、贷款期限，根据您企业的综合情况给出。</p>
+                    </li>
+                    <!-- 问答开始结束 -->
+                    <!-- 问答开始 -->
+                    <li class="f-cb">
+                        <span class="wb-span">
+                            <img src="https://img.alicdn.com/tps/TB14JeeOpXXXXX9XVXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p class="wb-question">如何申请100万以上的网商贷标准版？</p>
+                    </li>
+                    <li class="f-cb wb-li">
+                        <span>
+                            <img src="https://img.alicdn.com/tps/TB1vy9fOpXXXXcpXFXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p>除以上的申请条件外，还需满足：1、国际站付费会员年限大于12个月；2、年销售额1000万及以上；3、无重大负面信息。
+                        </p>
+                    </li>
+                    <!-- 问答开始结束 -->
+                    <!-- 问答开始 -->
+                    <li class="f-cb">
+                        <span class="wb-span">
+                            <img src="https://img.alicdn.com/tps/TB14JeeOpXXXXX9XVXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p class="wb-question">如何收费？</p>
+                    </li>
+                    <li class="f-cb wb-li">
+                        <span>
+                            <img src="https://img.alicdn.com/tps/TB1vy9fOpXXXXcpXFXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p>贷款正常使用过程中，除合同约定利息费用外，不收取任何其他费用。不允许其他任何机构或个人，利用网商贷谋取不当利益（如“额外费用”或“捆绑销售”）</p>
+                    </li>
+                    <!-- 问答开始结束 -->
+                    <!-- 问答开始 -->
+                    <li class="f-cb">
+                        <span class="wb-span">
+                            <img src="https://img.alicdn.com/tps/TB14JeeOpXXXXX9XVXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p class="wb-question">可以提前还款吗？</p>
+                    </li>
+                    <li class="f-cb wb-li">
+                        <span>
+                            <img src="https://img.alicdn.com/tps/TB1vy9fOpXXXXcpXFXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p>请关注你支用时签署的合同，如提前还款，可能产生剩余本金3%的手续费，签署合同以及提前还款前都会提示到你。</p>
+                    </li>
+                    <!-- 问答开始结束 -->
+                    <!-- 问答开始 -->
+                    <li class="f-cb">
+                        <span class="wb-span">
+                            <img src="https://img.alicdn.com/tps/TB14JeeOpXXXXX9XVXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p class="wb-question">如何支用贷款？</p>
+                    </li>
+                    <li class="f-cb wb-li">
+                        <span>
+                            <img src="https://img.alicdn.com/tps/TB1vy9fOpXXXXcpXFXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p>获贷之后会有短信、邮件提醒，你可登陆贷款后台在线签署，或等待工作人员给你致电指导签约。</p>
+                    </li>
+                    <!-- 问答开始结束 -->
+                    <!-- 问答开始 -->
+                    <li class="f-cb">
+                        <span class="wb-span">
+                            <img src="https://img.alicdn.com/tps/TB14JeeOpXXXXX9XVXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p class="wb-question">如何还款？</p>
+                    </li>
+                    <li class="f-cb wb-li">
+                        <span>
+                            <img src="https://img.alicdn.com/tps/TB1vy9fOpXXXXcpXFXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p>还款可登陆贷款后台还款，或保证你签署合同时绑定的支付宝有充足余额，还款日自动扣除所需还的金额。</p>
+                    </li>
+                    <!-- 问答开始结束 -->
+                    <!-- 问答开始 -->
+                    <li class="f-cb">
+                        <span class="wb-span">
+                            <img src="https://img.alicdn.com/tps/TB14JeeOpXXXXX9XVXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p class="wb-question">在线征信</p>
+                    </li>
+                    <li class="f-cb wb-li">
+                        <span>
+                            <img src="https://img.alicdn.com/tps/TB1vy9fOpXXXXcpXFXXXXXXXXXX-38-39.png" width="19" height="20" />
+                        </span>
+                        <p>为了加快申贷进度，申请网商贷标准版的客户，建议借款人夫妻在线签署征信协议 <a data-href="https://loan.mybank.cn/dk/b2bapply/credit/sign_credit_contract.htm" target="_blank" seed="gjzXM">点此签署。</a></p>
+                        <!--<p>有需要申请的客户可以<a href="" target="_blank">申请在线征信</a>，是否操作会有工作人员告知。</p>-->
+                    </li>
+                    <!-- 问答开始结束 -->
+                </ul>
+                <div class="wb-more">
+                    <a data-href="https://mobilehelp.mybank.cn/bkebank/index.htm#/knowledge/1689/1690?_k=h80fnb" target="_blank" seed="gjzGDWT">
+                        <span>去服务大厅查看更多问题</span>
+                        <img src="https://img.alicdn.com/tps/TB19cfDOXXXXXaXaXXXXXXXXXXX-18-19.png" width="18" height="19" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wb-bottom">
+            <div class="wb-ct">
+                <img src="https://img.alicdn.com/tps/TB1ufY1OXXXXXXuXFXXXXXXXXXX-1190-272.png" width="1190" height="272" />
+            </div>
+        </div>
+        <!-- 第三部分-->
+    </div>
+<!--侧导航部分 加 <img src="" width="120" height="200" alt=""/> 标签-->
+    <div class="m-nav">
+        <!--<img src="" width="120" height="200" alt=""/>-->
+    </div>
+    <div class="foot-wrap">
+        <div class="foot-content">
+            <div class="foot-left">
+                <img src="https://os.alipayobjects.com/rmsportal/rsIfqqRrbmvgxyw.png" class="mybank-foot-logo">
+                <div class="foot-link">
+                    <a href="http://www.antgroup.com/page/alipay.htm" target="_blank" title="支付宝">支付宝</a> |
+                    <a href="http://www.antgroup.com/page/zmxy.htm" target="_blank" title="芝麻信用">芝麻信用</a> |
+                    <a href="http://www.antgroup.com/page/jinrongyun.htm" target="_blank" title="蚂蚁金融云">蚂蚁金融云</a> |
+                    <a href="http://www.antgroup.com/page/yuebao.htm" target="_blank" title="余额宝">余额宝</a>
+                </div>
+            </div>
+            <div class="foot-right">
+                <div class="foot-intro">
+                    <a href="https://www.mybank.cn/about.htm" target="_blank" title="关于我们">关于我们</a> |
+                    <a href="https://job.alibaba.com/zhaopin/index.htm" target="_blank" title="诚招英才">诚招英才</a>
+                </div>
+                <p class="foot-copyright"><span class="copyright">浙ICP备15020822号</span>Copyright  2015-2016 浙江网商银行</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://login.mybank.cn/jquery.min.js"></script>
+    <script src="https://g.alicdn.com/bui/acharts/1.0.29/acharts-min.js"></script>
+    <script src="https://as.alipayobjects.com/g/animajs/mtracker/2.1.2/??seed.js,mtracker.js"></script>
+    <script src="https://os.alipayobjects.com/rmsportal/lxntvLgysXyUSHHmOvVR.js"></script>
+    <script>
+        document.onselectstart=function(){return false;}
+        //国际站
+        var select = [{
+            name : '国际站付费会员',
+            jpRateMin : '0.03%',
+            jpRateMax : '0.0475%',
+            maxMoney : '200'
+        },{
+            name : '国际站免费会员',
+            jpRateMin : '0.045%',
+            jpRateMax : '0.05%',
+            maxMoney : '100'
+        },{
+            name : '一达通会员',
+            jpRateMin : '0.045%',
+            jpRateMax : '0.05%',
+            maxMoney : '100'
+        }];
+    </script>
+    <script>
+        jQuery(function(){
+            var Viploan = function(element,select){
+                this.select = select; //会员类型数据
+                this.element = jQuery(element);
+                this.isFirst = true;
+                this.isConversion = true;
+                this.maxMoney = 200;
+                this.height = this.fnGetWidthHeight();
+            }
+            Viploan.prototype = {
+                init: function(){
+                    var self = this;
+                    self.initSelect();
+                    self.getSpm();
+                    self.formData();
+
+                    self.slideOnOff();
+                    self.popshow();
+
+                    self.binEvent();
+                    if(self.height < 900 && self.height > 500){
+                        jQuery('.m-boxwrap').css({
+                            'position': 'fixed',
+                            'bottom': '20px'
+                        });
+                        jQuery('.g-centent').scrollTop(70);
+                        jQuery(window).scroll(function(){
+                            var _height = window.pageYOffset  //用于FF
+                                    || document.documentElement.scrollTop
+                                    || document.body.scrollTop
+                                    || 0;
+                            if(_height > 140){
+                                jQuery('.m-boxwrap').attr('style','');
+                            }else{
+                                jQuery('.m-boxwrap').css({
+                                    'position': 'fixed',
+                                    'bottom': '20px'
+                                });
+                            }
+                        })
+                    }
+                },
+                binEvent: function(){
+                    var self = this;
+                    self.element.on('click','.j_select',function(){
+                        //select控制
+                        var _this = jQuery(this);
+                        var _select = _this.parents('.m-line').find('.m-select')
+                        if(_this.hasClass('active')){
+                            _this.removeClass('active');
+                            _select.hide()
+                        }else{
+                            _this.addClass('active');
+                            _select.show()
+                        }
+                    }).on('click','.j_loan a',function(){
+                        var _this = jQuery(this);
+                        if(!_this.hasClass('active')){
+                            _this.parent().find('a').removeClass('active');
+                            _this.addClass('active');
+                        }
+//                        self.formData();
+                    }).on('click','.m-select li',function(){
+                        var _this = jQuery(this);
+                        var _name = _this.html();
+                        var _min = _this.attr('jpmin');
+                        var _max = _this.attr('jpmax');
+                        self.maxMoney = parseInt(_this.attr('data-maxmoney'));
+                        var data = {
+                            jpRateMax: _max,
+                            jpRateMin: _min,
+                            name : _name
+                        }
+                        jQuery('.j-tishi').html('申贷额度2-'+self.maxMoney+'万');
+                        self.changeSelect(data);
+                        _this.parent().hide();
+                        jQuery('.j_select').removeClass('active');
+//                        self.formData();
+                    }).on('click','.j_form',function(){
+                        var _this = jQuery(this);
+                        self.formData();
+                    }).on('input blur','.j_mymoney',function(){
+                        var _this = jQuery(this);
+                        var _line = _this.parents('.m-line');
+                        var reg =  /^[0-9]+(.[0-9]{1,4})?$/;
+                        var _num = _this.val();
+                        if(reg.test(_num)){
+                            _num = parseFloat(_num);
+                            if(_num < 2 || _num > self.maxMoney){
+                                _line.find('.j-tishi').show();
+                                self.isConversion = false;
+                            }else{
+                                _line.find('.j-tishi').hide();
+                                self.isConversion = true;
+//                                self.formData();
+                            }
+                        }else{
+                            _line.find('.j-tishi').show();
+                            self.isConversion = false;
+                        }
+
+                    })
+                },
+                getSpm: function(){
+                    var self = this;
+                    var spm = self.getQueryString('spm');
+                    jQuery('.g-centent a').each(function(n, e){
+                        var _this = jQuery(e);
+                        var url = _this.attr('data-href');
+                        if(spm){
+                            if(url !== undefined){
+                                url = self.addUrlPara(url, 'spm', spm);
+                            }
+                        }
+                        _this.attr('href',url);
+                    })
+
+                },
+                initSelect: function(){
+                    var self = this;
+                    var _select = jQuery('.m-select');
+                    var selectDom = '';
+                    jQuery(self.select).each(function(n, e){
+                        if(n == 0){
+                            self.changeSelect(e);
+                        }
+                        selectDom += '<li jpmin="'+ e.jpRateMin+'" jpmax="'+ e.jpRateMax+'" data-maxmoney="'+ e.maxMoney+'">'+ e.name+'</li>'
+                    })
+                    _select.html(selectDom);
+                },
+                changeSelect: function(e){
+                    var self = this;
+                    var _selectName = jQuery('.u-select');
+                    var _loan = jQuery('.j_loan');
+                    _selectName.html(e.name);
+                    _loan.html('<a class="u-btn active" href="javascript:void (0)" data-loan="'+e.jpRateMin+'">最低('+ e.jpRateMin+')</a><a class="u-btn" href="javascript:void (0)" data-loan="'+e.jpRateMax+'">最高('+ e.jpRateMax+')</a>')
+                },
+                formData: function(){
+                    var self = this;
+                    var _myMoney = jQuery('.j_mymoney');
+                    var _loan = jQuery('.j_loan .active');
+                    var _bj = _myMoney.val();
+                    var _lll = parseFloat(_loan.attr('data-loan'))/100;
+                    if(_bj !== ''){
+                        if(self.isConversion){
+                            self.conversion(parseFloat(_bj) * 10000, _lll);
+                        }
+                    }
+                },
+                conversion: function(capital, rate){
+                    var self = this;
+                    var my = capital;
+                    self.capitalData = [];
+                    self.interestData = [];
+
+                    var totalCapital = 0;
+
+                    //每月归还本金
+                    var _capital = Math.round(capital / 12);
+                    for(var i = 0; i < 12; i++){
+                        self.capitalData.push(Math.round(_capital))
+                    }
+                    //每月利息
+                    for(var i = 0; i< 12; i++){
+                        var a = Math.round(my * 30 * rate);
+                        totalCapital += a;
+                        self.interestData.push(a)
+                        my = my - _capital
+                    }
+                    jQuery('.detail').find('.u-title').html('总利息约<span>'+self.fmoney(totalCapital)+'</span>元，还款总额约<span>'+self.fmoney((capital+totalCapital))+'</span>元')
+
+//                    if(self.isFirst){
+//                        self.isFirst = false;
+//                        self.chart1();
+//                        self.chart.render();
+//                    }else{
+//                        jQuery('#canvas').html('')
+////                        self.chart.clear();
+////                        var data = [self.capitalData, self.interestData]
+////                        self.chart.changeData(data, true);
+////                        jQuery('#canvas').html('')
+////                        self.chart.repaint();
+//                        self.chart1();
+//                        self.chart.render();
+//                    }
+                    jQuery('#canvas').html('')
+                    self.chart1();
+                    self.chart.render();
+                },
+                chart1: function(){
+                    var self = this;
+                    self.chart = new AChart({
+                        theme : AChart.Theme.Base,
+                        id : 'canvas',
+                        width : 460,
+                        height : 240,
+                        forceFit  : true,
+                        plotCfg : {
+                            margin : [50,50,80] //画板的边距
+                        },
+                        legend : {
+                            dy : -40, //跟绘图区域的偏移y
+                            dx : 350,
+                            align : 'top',//top,left,right,bottom(默认)
+                            layout : 'horizontal',//默认 horizontal
+                            back : { //背景的配置信息，等同于shape的attrs
+                                fill : '',//stroke : null 清除边框
+                                stroke : null
+                            },
+                            spacingX : 10
+                        },
+                        xAxis : {
+                            categories: ['1', '2', '3', '4', '5', '6',
+                                '7', '8', '9', '10', '11', '12'],
+                            labels : {
+                                label : {
+                                    font : '10px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif',
+                                    stroke : '#d0e1e2'
+                                }
+                            }
+                        },
+                        yAxis : [{
+                            position : 'left',
+                            title : {
+                                text : '每月还款示意图',
+                                x : 40,
+                                y : -80,
+                                rotate : 0,
+                                font : '10px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif'
+                            },
+                            line : {
+                                stroke : '#c0c0c0'
+                            },
+                            labels : {
+                                label : {
+                                    font : '10px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif',
+                                    stroke : '#d0e1e2',
+                                    x : -20
+                                }
+                            }
+                        },{
+                            type : 'number',
+                            position : 'right',
+                            line : {
+                                stroke : '#d0e1e2'
+                            },
+                            tickLine : null,
+                            labels : {
+                                label : {
+                                    font : '12px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif',
+                                    stroke : '#d0e1e2',
+                                    x : 20
+                                }
+                            }
+                        }],
+                        seriesOptions : { //设置多个序列共同的属性
+                            lineCfg : { //不同类型的图对应不同的共用属性，lineCfg,areaCfg,columnCfg等，type + Cfg 标示
+                                smooth : true
+
+                            }
+                        },
+                        tooltip : {
+                            valueSuffix : '元',
+                            shared : true, //是否多个数据序列共同显示信息
+                            crosshairs : true //是否出现基准线
+                        },
+                        series : [{
+                            name: '本金',
+                            color: '#00adb4',
+                            type: 'column',
+                            yAxis: 1,
+                            data: self.capitalData,
+                            markers: '',
+                            autoWidth : false,
+                            columnWidth : 10
+                        }, { //默认的marker的类型，会按照预先设置的顺序进行，可以通过markers修改对应的属性
+                            name: '利息',
+                            color: '#fb6547',
+                            title: '每月还款示意图',
+                            markers : {
+                                marker : {
+                                    stroke : null,
+                                    fill : null,
+                                    radius : 3,
+                                    symbol : 'circle'
+                                },
+                                actived : {
+                                    stroke : "none",
+                                    radius : 5
+                                }
+                            },
+                            data: self.interestData
+                        }]
+                    });
+                },
+                addUrlPara: function(url, name, value) {
+                    var currentUrl = url.split('#')[0];
+                    if (/\?/g.test(currentUrl)) {
+                        if (/name=[-\w]{4,25}/g.test(currentUrl)) {
+                            currentUrl = currentUrl.replace(/name=[-\w]{4,25}/g, name + "=" + value);
+                        } else {
+                            currentUrl += "&" + name + "=" + value;
+                        }
+                    } else {
+                        currentUrl += "?" + name + "=" + value;
+                    }
+                    if (window.location.href.split('#')[1]) {
+                        return currentUrl + '#' + window.location.href.split('#')[1];
+                    } else {
+                        return currentUrl;
+                    }
+                },
+                getQueryString: function(name) {
+                    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+                    var r = window.location.search.substr(1).match(reg);
+                    if (r != null) {
+                        return unescape(r[2]);
+                    }
+                    return null;
+                },
+                fmoney : function(s, n) {
+                    s = parseFloat((s + "").replace(/[^\d\.-]/g, "")).toFixed(n) + "";
+                    var l = s.split(".")[0].split("").reverse(),
+                            r = s.split(".")[1];
+                    t = "";
+                    for(i = 0; i < l.length; i ++ )
+                    {
+                        t += l[i] + ((i + 1) % 3 == 0 && (i + 1) != l.length ? "," : "");
+                    }
+                    return t.split("").reverse().join("");
+                },
+                slideOnOff:function(){
+                    var _this = this;
+                    var len = $('.slide1 .slide').length;
+                    if(len > 1){
+                        _this.slide();
+                    }
+                },
+                slide:function(){
+                    var _this = this;
+                    $('.slide1').bxSlider({
+                        mode:'fade',
+                        slideWidth: 1920,
+                        slideMargin: 0,
+                        captions: true,
+                        auto: true,
+                        infiniteLoop: true,
+                        autoHover: true,
+                        speed:1000,
+                        pause: 3000,
+                        controls:false
+                    });
+                },
+                popshow:function(){
+                    var _this = this;
+                    $('body').on('click','.m-cover,.m-closeBtn',function(){
+                        $('.m-pop,.m-cover').hide();
+                    });
+                    $('body').on('click','.J_switch1',function(){
+                        $('.pop1,.m-cover').show();
+                    });
+                    $('body').on('click','.J_switch2',function(){
+                        $('.pop2,.m-cover').show();
+                    });
+                },
+                fnGetWidthHeight : function() {
+                    var viewportwidth;
+                    var viewportheight;
+                    // 支持(mozilla/netscape/opera/chrome/IE7)
+                    if (typeof window.innerWidth != 'undefined') {
+                        viewportwidth = window.innerWidth;
+                        viewportheight = window.innerHeight;
+                    }
+                    // 支持（IE6）
+                    else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0) {
+                        viewportwidth = document.documentElement.clientWidth;
+                        viewportheight = document.documentElement.clientHeight;
+                    }
+                    // 支持其他浏览器
+                    else {
+                        viewportwidth = document.getElementsByTagName('body')[0].clientWidth;
+                        viewportheight = document.getElementsByTagName('body')[0].clientHeight;
+                    }
+                    return viewportheight;
+                }
+        }
+            var viploan = new Viploan('.m-chart',select);
+            viploan.init();
+        })
+    </script>
+    <script>
+        window._to = {
+            st: Date.now(),
+            role_id: '',
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+@import url(_base.less);
+@import url(_function.less);
+/*左侧标题颜色*/
+@fontcolorone:#494444;
+/*左侧标题小超链字体颜色hover后的颜色*/
+@fontcolortwo:#000;
+/*左侧标题小超链字体颜色*/
+@fontcolorthree:#999999;
+/*右侧主内容标题下文案颜色*/
+@fontcolorfour:#454545;
+/*蒙层中文字颜色和当前页文字颜色*/
+@fontcolorspan:#ffffff;
+/*整个主题内容背景色*/
+@allbackgroundcolor:#ffffff;
+@color_footbg:#161616;
+@color_foottitle:#868686;
+@color_footlight:#face13;
+.g-newct{
+	width: 100%;
+	background: @allbackgroundcolor;
+	padding-bottom: 90px;
+	min-width: 566px;
+	.g-main{
+		max-width: 1200px;
+		margin: 0 auto;
+		margin-top: 5.6%;
+		.clearfix();
+		position: relative;
+		.g-sidebar{
+			width: 22%;
+			.float(left);
+			margin-left: 2%;
+			position: relative;
+			h3{
+				width: 98%;
+				margin-left: 2%;
+				font-size:22px;
+				font-weight: normal;
+				line-height:23px;
+				color:@fontcolorone;
+			}
+			.line{
+				width: 98%;
+				margin-left: 2%;
+				border-top: 2px solid @skin;
+				margin-top: 20px;
+			}
+			.list{
+				width: 98%;
+				margin-left: 2%;				
+				.title{
+					font-size: 20px;
+					line-height: 20px;
+					color:@fontcolortwo;
+					padding: 17px 0 17px 26px;
+					background: url(../images/hl_left.png) no-repeat left center;
+					cursor: pointer;
+					border-bottom: 1px solid #e3e3e3;
+					display: block;
+				}
+				.titletwo{
+					line-height: 20px;
+					background-position: left 17px;
+				}
+				.active{
+					background: url(../images/hl_down.png) no-repeat left 20px;
+				}
+				li{
+					padding-left: 26px;
+					margin-top: 13px;
+					display: none;
+					a{
+						background: url(../images/hl_sleft.png) no-repeat left center;
+						padding-left: 16px;
+						font-size: 16px;
+						line-height: 16px;
+						color: @fontcolorthree;
+					}
+					a:hover{
+						color: @fontcolortwo;
+					}
+				}
+			}			
+		}
+		.g-container{
+			width: 71.16%;
+			padding-left: 40px;
+			.float(left);
+			overflow: hidden;
+			position: relative;
+			.g-bags{
+				
+				background: #fbfaf8;
+				padding-top: 7%;
+				margin-top: 30px;
+				position: relative;
+				h3{
+					font-size: 16px;
+					line-height: 28px;
+					color: #999999;
+					text-align: center;
+				}
+				p{
+					width: 90%;
+					margin-left: 5%;
+					font-size: 16px;
+					line-height: 30px;
+					color: #000;
+					table-layout:fixed; word-break: break-all; overflow:hidden;
+				  text-align:justify;
+				}
+				.g-textthree{
+					padding-bottom: 15px;
+				}
+				.bags{
+					background: #e6e6e6;
+					padding: 20px 0;
+					.clearfix();
+					li{
+						width: 46%;
+						.float(left);
+						margin-left: 5%;
+						span{
+							font-size: 18px;
+							line-height: 18px;
+							color: #a1a1a1;
+						}
+						a{
+							text-decoration: underline;
+							font-size: 18px;
+							line-height: 26px;
+							color: #a1a1a1;
+						}
+					}
+					.li-two{
+						width: 38%;
+						margin-left: 7%;
+					}
+				}
+				.g-header{
+					background: @skin;
+					height: 67px;
+					font-size: 28px;
+					line-height: 67px;
+					color: #fff;
+					position: absolute;
+				    left: -60px;
+				    top: -30px;
+				    z-index: 20;
+				    padding-left: 6%;
+				    width: 92%;
+				}
+			}
+			.g-news{
+				background: #fbfaf8;
+				position: relative;
+				.listone{
+					.clearfix();
+					padding-top: 74px;
+					padding-bottom: 30px;
+					li{
+						width: 45%;
+						margin-left: 3%;
+						.float(left);
+						a{
+							display: block;
+							height: 35px;
+							line-height: 35px;
+							font-size: 16px;
+							position: relative;
+							color: #888888;
+							border-bottom: 2px dotted #eee;
+							.a-text{
+								position: absolute;
+								top:0;left: 0;
+							}
+							.a-day{
+								position: absolute;
+								top:0;right: 0;
+							}
+						}
+						a:hover{
+							color: #000;
+						}
+					}
+				}
+				.g-header{
+					background: @skin;
+					height: 47px;
+					font-size: 18px;
+					line-height: 47px;
+					color: #fff;
+					position: absolute;
+				    left: -20px;
+				    top: 0px;
+				    z-index: 20;
+				    padding-left: 6%;
+				    width: 93%;
+				}
+			}
+			.g-slide{
+				background: #fbfaf8;
+				padding-bottom: 30px;
+				position: relative;
+				padding-top: 75px;
+				.small-box{					
+					.clearfix();
+					.btn{
+						display: block;
+						width: 19px;
+						height: 32px;
+						cursor: pointer;
+					 	margin-top: 38px;
+					}
+					.left-btn{
+						.float(left);
+				    	margin-right: 4px;
+				    	margin-left: 16px;
+				    	background: url(../images/qy-btuleft.png);
+					}
+					.right-btn {
+					    .float(right);
+					    margin-right: 15px;
+					    background: url(../images/qy-bturight.png);
+					}
+					.small-list{
+						position: relative;
+				    	.float(left);
+				    	width: 762px;
+				    	overflow: hidden;
+				    	height: 106px;
+				    	ul{
+				    		.clearfix();
+			    			li{
+					    		width: 140px;
+					    		height: 100px;
+					    		border: 1px solid #eee;
+					    		padding: 2px;
+					    		.float(left);
+					    		margin-left: 6px;
+					    		position: relative;
+					    		img{
+					    			max-width: 100%;
+					    			max-height: 100%;
+					    		}
+					    	}
+					    	li.on .bun-bg{
+								display: block;
+							}
+							li .bun-bg {
+							    display: none;
+							    position: absolute;
+							    top: 0px;
+							    left: 0px;
+							    width: 100%;
+							    height: 100%;
+							    background: #000;
+							    filter: alpha(opacity=60);
+							    -moz-opacity: 0.6;
+							    -khtml-opacity: 0.6;
+							    opacity: 0.6;
+							}
+				    	}
+					}
+				}
+				.g-header{
+					background: @skin;
+					height: 47px;
+					font-size: 18px;
+					line-height: 47px;
+					color: #fff;
+					position: absolute;
+				    left: -20px;
+				    top: 0px;
+				    z-index: 20;
+				    padding-left: 6%;
+				    width: 93%;
+				}
+			}
+		}		
+	}
+}
+@media screen and (max-width:1200px){
+	.g-newct{
+		.g-main{
+			.g-container{
+				.g-news{
+					.listone{
+						li{
+							a{
+								font-size: 12px;
+							}
+						}
+					}
+				}
+				.g-slide{
+					.small-box{
+						width: 680px;
+						margin: 0 auto;
+						.btn{
+							margin-top: 24px;
+						}
+						.small-list{
+							width: 598px;
+							ul{
+								li{
+									width: 106px;
+									height: 77px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:1004px) and (min-width:960px){
+	.g-newct{
+		.g-main{
+			.g-sidebar{
+				h3{
+					font-size: 19px;
+					line-height: 19px;
+				}
+				.list{
+					.title{
+						font-size: 16px;
+						line-height: 16px;
+					}
+					li{
+						a{
+							font-size: 14px;							
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:960px){
+	.g-newct{
+		.g-main{
+			.g-sidebar{
+				.float(none);
+				width: 95%;
+			}
+			.g-container {
+			    width: 90%;
+			    margin-left: 2%;
+			    float: left;
+			    overflow: hidden;
+			    margin-top: 5%;
+			}
+		}
+	}
+
+}
+@media screen and (max-width:770px){
+	.g-newct{
+		.g-main{
+			.g-container{
+				.g-news{
+					.listone{
+						li{
+							.float(none);
+							width: 95%;
+							a{
+								font-size: 12px;
+							}
+						}
+					}
+				}
+				.g-slide{
+					.small-box{
+						width: 480px;
+						margin: 0 auto;
+						.btn{
+							margin-top: 12px;
+						}
+						.small-list{
+							width: 407px;
+							ul{
+								li{
+									width: 68px;
+									height: 50px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:640px) {
+	.g-newct{
+	  min-width: 0;
+	  padding-bottom: 0;
+		.g-main{
+			.g-container{
+              	width: 100%;
+                margin-left: 0;
+                padding-left: 0;
+                .g-bags{
+				  padding-top: 11%;
+                  .g-header{
+                    left: 0;
+                    margin-left: 0;
+                    width: 100%;
+					font-size: 20px;
+					text-align: center;
+					padding: 0;
+                  }
+				  p{
+					text-align:justify;
+				  }
+
+                }
+			  	.g-news,.g-slide{
+				  .g-header{
+					width: 100%;
+				  }
+				}
+			  	.g-slide{
+				  display: none;
+				}
+
+                .a-list{
+                    li{
+                        a{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .g-page{
+                    .pagelist{
+                        width: 85.23%;
+                    }
+                }
+			}
+		}
+	}
+}
+//@media screen and (max-width:480px) and (min-width:320px){
+//	.g-newct{
+//		.g-main{
+//			.g-sidebar{
+//				width: 89%;
+//			}
+//			.g-container{
+//				width: 89%;
+//				.g-page{
+//					.pagelist{
+//						width: 85.23%;
+//					}
+//				}
+//			}
+//		}
+//	}
+//}

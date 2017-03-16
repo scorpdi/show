@@ -1,0 +1,221 @@
+/* 皮肤 */
+/*导航条半透明rgba样式*/
+/*线*/
+/*未选中字体颜色*/
+/* 选中字体颜色-（原色调-不变）*/
+/* 选中块的背景色 */
+/* end 导航*/
+/* search */
+/* footer */
+/* */
+/* function*/
+/*#fdc101 253,193,1*/
+/*#5578dd 85, 120, 221*/
+/*左侧标题颜色*/
+/*左侧标题小超链字体颜色hover后的颜色*/
+/*左侧标题小超链字体颜色*/
+/*右侧主内容标题下文案颜色*/
+/*蒙层中文字颜色和当前页文字颜色*/
+/*整个主题内容背景色*/
+.g-newlist {
+  width: 100%;
+  background: #ffffff;
+}
+.g-newlist .g-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 5.6%;
+  *zoom: 1;
+}
+.g-newlist .g-main:before,
+.g-newlist .g-main:after {
+  content: "";
+  display: table;
+}
+.g-newlist .g-main:after {
+  clear: both;
+}
+.g-newlist .g-main .g-sidebar {
+  width: 22%;
+  float: left;
+  *display: inline;
+  margin-left: 2%;
+}
+.g-newlist .g-main .g-sidebar h3 {
+  width: 98%;
+  margin-left: 2%;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 23px;
+  color: #494444;
+}
+.g-newlist .g-main .g-sidebar .line {
+  width: 98%;
+  margin-left: 2%;
+  border-top: 2px solid #5578dd;
+  margin-top: 20px;
+}
+.g-newlist .g-main .g-sidebar .list {
+  width: 98%;
+  margin-left: 2%;
+}
+.g-newlist .g-main .g-sidebar .list .title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  padding: 17px 0 17px 26px;
+  background: url(../images/hl_left.png) no-repeat left center;
+  cursor: pointer;
+  border-bottom: 1px solid #e3e3e3;
+  display: block;
+}
+.g-newlist .g-main .g-sidebar .list .titletwo {
+  line-height: 20px;
+  background-position: left 17px;
+}
+.g-newlist .g-main .g-sidebar .list .active {
+  background: url(../images/hl_down.png) no-repeat left 20px;
+}
+.g-newlist .g-main .g-sidebar .list li {
+  padding-left: 26px;
+  margin-top: 13px;
+  display: none;
+}
+.g-newlist .g-main .g-sidebar .list li a {
+  background: url(../images/hl_sleft.png) no-repeat left center;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+.g-newlist .g-main .g-sidebar .list li a:hover {
+  color: #000;
+}
+.g-newlist .g-main .g-container {
+  width: 73.16%;
+  margin-left: 21px;
+  float: left;
+  *display: inline;
+  overflow: hidden;
+}
+.g-newlist .g-main .g-container .a-list {
+  width: 100%;
+}
+.g-newlist .g-main .g-container .a-list li {
+  width: 100%;
+  border-bottom: 1px dotted #eee;
+}
+.g-newlist .g-main .g-container .a-list li a {
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+  height: 50px;
+  color: #a2a2a2;
+  position: relative;
+}
+.g-newlist .g-main .g-container .a-list li a .a-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.g-newlist .g-main .g-container .a-list li a .a-day {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.g-newlist .g-main .g-container .a-list li a:hover {
+  color: #000;
+}
+.g-newlist .g-main .g-container .g-page {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+.g-newlist .g-main .g-container .g-page .pagelist {
+  width: 43.23%;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.g-newlist .g-main .g-container .g-page .pagelist:before,
+.g-newlist .g-main .g-container .g-page .pagelist:after {
+  content: "";
+  display: table;
+}
+.g-newlist .g-main .g-container .g-page .pagelist:after {
+  clear: both;
+}
+.g-newlist .g-main .g-container .g-page .pagelist li {
+  width: 10.25%;
+  float: left;
+  *display: inline;
+  margin-left: 3.9%;
+}
+.g-newlist .g-main .g-container .g-page .pagelist li a {
+  color: #ababab;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  display: block;
+}
+.g-newlist .g-main .g-container .g-page .pagelist li .a-color {
+  color: #000;
+}
+.g-newlist .g-main .g-container .g-page .pagelist .page-li:hover {
+  background: #5578dd;
+  color: #ffffff;
+}
+.g-newlist .g-main .g-container .g-page .pagelist .pageactive {
+  background: #5578dd;
+  color: #ffffff;
+}
+@media screen and (max-width: 1004px) and (min-width: 960px) {
+  .g-newlist .g-main .g-sidebar h3 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .g-newlist .g-main .g-sidebar .list .title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .g-newlist .g-main .g-sidebar .list li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .g-newlist .g-main .g-sidebar {
+    float: none;
+    width: 95%;
+  }
+  .g-newlist .g-main .g-sidebar .hot {
+    padding-top: 30px;
+  }
+  .g-newlist .g-main .g-container {
+    width: 90%;
+    margin-left: 5%;
+    float: left;
+    overflow: hidden;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 480px) {
+  .g-newlist .g-main .g-container .a-list li a {
+    font-size: 15px;
+  }
+  .g-newlist .g-main .g-container .g-page .pagelist {
+    width: 85.23%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .g-newlist .g-main .g-sidebar {
+    width: 89%;
+  }
+  .g-newlist .g-main .g-container {
+    width: 89%;
+  }
+  .g-newlist .g-main .g-container .a-list li a {
+    font-size: 12px;
+  }
+  .g-newlist .g-main .g-container .g-page .pagelist {
+    width: 85.23%;
+  }
+}

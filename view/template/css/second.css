@@ -1,0 +1,23 @@
+/* 皮肤 */
+/* */
+/*.btest{
+  .float(right);
+  background: @skin;
+}*/
+.g-second {
+  width: 100%;
+  background: #fff;
+}
+.g-second .gj-banner {
+  width: 100%;
+  margin: 0 auto 186px;
+}
+.g-second .gj-banner img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.g-second .gj-main {
+  width: 1200px;
+  margin: 0 auto;
+}

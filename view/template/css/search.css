@@ -1,0 +1,128 @@
+/* 皮肤 */
+/*导航条半透明rgba样式*/
+/*线*/
+/*未选中字体颜色*/
+/* 选中字体颜色-（原色调-不变）*/
+/* 选中块的背景色 */
+/* end 导航*/
+/* search */
+/* footer */
+/* */
+/* function*/
+/*#fdc101 253,193,1*/
+/*#5578dd 85, 120, 221*/
+.search-section {
+  background-color: #fdc101;
+  height: 156px;
+  width: 100%;
+}
+.search-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.search-section .container .left-tags {
+  width: 806px;
+  height: 165px;
+  background-color: #201f1a;
+  position: absolute;
+  left: -360px;
+  top: 19px;
+  color: #fff;
+}
+.search-section .container .left-tags div {
+  height: 165px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.search-section .container .left-tags span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-left: 360px;
+  line-height: 46px;
+}
+.search-section .container .left-tags i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #908f8d;
+  padding-left: 360px;
+  line-height: 20px;
+  font-style: italic;
+}
+.search-section .container .search {
+  margin-left: 494px;
+  position: relative;
+}
+.search-section .container .search button {
+  border: 0;
+  font-size: 16px;
+  width: 24%;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  background-color: #201f1a;
+  color: #fff;
+  text-indent: 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: absolute;
+  right: 0;
+  top: 52px;
+}
+.search-section .container .search input {
+  height: 48px;
+  width: 78%;
+  font-size: 16px;
+  text-indent: 10px;
+  line-height: 48px;
+  color: #666;
+  position: absolute;
+  left: 0;
+  top: 58px;
+  border: none;
+  border-right: 1px solid #898886;
+}
+@media screen and (max-width: 1040px) and (min-width: 740px) {
+  .search-section .container .search button {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .search-section .container .search button {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 940px) and (min-width: 740px) {
+  .search-section .container .search button {
+    width: 108px;
+    z-index: 40;
+    text-indent: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 430px) {
+  .search-section .container .search button {
+    width: 108px;
+    z-index: 40;
+    text-indent: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 740px) {
+  .search-section .container .search {
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    top: 154px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .search-section {
+    height: 300px;
+  }
+}

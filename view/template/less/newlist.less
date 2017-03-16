@@ -1,0 +1,236 @@
+@import url(_base.less);
+@import url(_function.less);
+/*左侧标题颜色*/
+@fontcolorone:#494444;
+/*左侧标题小超链字体颜色hover后的颜色*/
+@fontcolortwo:#000;
+/*左侧标题小超链字体颜色*/
+@fontcolorthree:#999999;
+/*右侧主内容标题下文案颜色*/
+@fontcolorfour:#454545;
+/*蒙层中文字颜色和当前页文字颜色*/
+@fontcolorspan:#ffffff;
+/*整个主题内容背景色*/
+@allbackgroundcolor:#ffffff;
+@color_footbg:#161616;
+@color_foottitle:#868686;
+@color_footlight:#face13;
+
+.g-newlist{
+	width: 100%;
+	background: @allbackgroundcolor;
+	.g-main{
+		max-width: 1200px;
+		margin: 0 auto;
+		margin-top: 5.6%;
+		.clearfix();
+		.g-sidebar{
+			width: 22%;
+			.float(left);
+			margin-left: 2%;
+			h3{
+				width: 98%;
+				margin-left: 2%;
+				font-size:22px;
+				font-weight: normal;
+				line-height:23px;
+				color:@fontcolorone;
+			}
+			.line{
+				width: 98%;
+				margin-left: 2%;
+				border-top: 2px solid @skin;
+				margin-top: 20px;
+			}
+			.list{
+				width: 98%;
+				margin-left: 2%;				
+				.title{
+					font-size: 20px;
+					line-height: 20px;
+					color:@fontcolortwo;
+					padding: 17px 0 17px 26px;
+					background: url(../images/hl_left.png) no-repeat left center;
+					cursor: pointer;
+					border-bottom: 1px solid #e3e3e3;
+					display: block;
+				}
+				.titletwo{
+					line-height: 20px;
+					background-position: left 17px;
+				}
+				.active{
+					background: url(../images/hl_down.png) no-repeat left 20px;
+				}
+				li{
+					padding-left: 26px;
+					margin-top: 13px;
+					display: none;
+					a{
+						background: url(../images/hl_sleft.png) no-repeat left center;
+						padding-left: 16px;
+						font-size: 16px;
+						line-height: 16px;
+						color: @fontcolorthree;
+					}
+					a:hover{
+						color: @fontcolortwo;
+					}
+				}
+			}			
+		}
+		.g-container{
+			width: 73.16%;
+			margin-left: 21px;
+			.float(left);
+			overflow: hidden;
+			.a-list{
+				width: 100%;
+				li{
+					width: 100%;
+					border-bottom:1px dotted #eee;
+					a{
+						display: block;
+						font-size: 18px;
+						line-height: 50px;
+						height: 50px;
+						color: #a2a2a2;
+						position: relative;
+						.a-text{
+							position: absolute;
+							top:0;left: 0;
+						}
+						.a-day{
+							position: absolute;
+							top:0;right: 0;						
+						}
+					}
+					a:hover{
+						color: #000;
+					}
+				}
+			}
+			.g-page{
+				width: 100%;
+				margin-top: 50px;
+				margin-bottom: 90px;
+				.pagelist{
+					width: 43.23%;
+					margin: 0 auto;
+					.clearfix(); 
+					li{
+						width: 10.25%;
+						.float(left);
+						margin-left: 3.9%;						
+						a{
+							color:#ababab;
+							font-size: 14px;
+							line-height: 32px;
+							text-align: center;
+							display: block;
+						}
+						.a-color{
+							color: #000;
+						}
+					}
+					.page-li:hover{
+						background:@skin;
+						color: @fontcolorspan;
+					}
+					.pageactive{
+						background: @skin;
+						color: @fontcolorspan;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:1004px) and (min-width:960px){
+	.g-newlist{
+		.g-main{
+			.g-sidebar{
+				h3{
+					font-size: 19px;
+					line-height: 19px;
+				}
+				.list{
+					.title{
+						font-size: 16px;
+						line-height: 16px;
+					}
+					li{
+						a{
+							font-size: 14px;							
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:960px){
+	.g-newlist{
+		.g-main{
+			.g-sidebar{
+				.float(none);
+				width: 95%;
+				.hot{
+					padding-top: 30px;
+				}
+			}
+			.g-container {
+			    width: 90%;
+			    margin-left: 5%;
+			    float: left;
+			    overflow: hidden;
+			    margin-top: 5%;
+			}
+		}
+	}
+
+}
+@media screen and (max-width:640px) and (min-width:480px){
+	.g-newlist{
+		.g-main{
+			.g-container{
+				.a-list{
+					li{
+						a{
+							font-size: 15px;
+						}
+					}
+				}
+				.g-page{
+					.pagelist{
+						width: 85.23%;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:480px) and (min-width:320px){
+	.g-newlist{
+		.g-main{
+			.g-sidebar{
+				width: 89%;				
+			}
+			.g-container{
+				width: 89%;
+				.a-list{
+					li{
+						a{
+							font-size: 12px;
+						}
+					}
+				}
+				.g-page{
+					.pagelist{
+						width: 85.23%;
+					}
+				}
+			}
+		}
+	}
+}

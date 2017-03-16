@@ -1,0 +1,283 @@
+/* 皮肤 */
+/*导航条半透明rgba样式*/
+/*线*/
+/*未选中字体颜色*/
+/* 选中字体颜色-（原色调-不变）*/
+/* 选中块的背景色 */
+/* end 导航*/
+/* search */
+/* footer */
+/* */
+/* function*/
+/*#fdc101 253,193,1*/
+/*#5578dd 85, 120, 221*/
+.hot-product {
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 120px;
+}
+.hot-product .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px;
+  position: relative;
+}
+.hot-product .container .product-title {
+  position: relative;
+}
+.hot-product .container .product-title img {
+  margin-left: 26px;
+}
+.hot-product .container .product-title .border {
+  display: block;
+  width: 108px;
+  height: 218px;
+  border: 3px solid #000;
+  margin: 20px 0 0 89px;
+  background-color: #fff;
+}
+.hot-product .container .product-title div {
+  color: #43443e;
+  font-family: Arial;
+  font-size: 100px;
+  line-height: 100px;
+  text-transform: uppercase;
+  letter-spacing: 25px;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+}
+.hot-product .container .product-title .tags-top {
+  display: block;
+  color: #43443e;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 254px;
+  top: 81px;
+}
+.hot-product .container .product-title .tags-down {
+  display: block;
+  color: #fdc101;
+  font-size: 44px;
+  line-height: 44px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 205px;
+  top: 128px;
+}
+.hot-product .container .product-title .square {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #fdc101;
+  position: absolute;
+  left: 122px;
+  top: 198px;
+}
+.hot-product .container .product-title .square:before {
+  content: "";
+  border: 16px solid #fff;
+  border-bottom: none;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: relative;
+  top: 32px;
+  left: 6px;
+  border-radius: 2px;
+}
+.hot-product .container .product-title .square:after {
+  content: "";
+  border: 12px solid #fdc101;
+  border-bottom: none;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+.hot-product .container .right-seascape {
+  width: 50%;
+  height: 297px;
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
+.hot-product .container .product-list {
+  margin-top: 53px;
+  position: relative;
+  height: 640px;
+}
+.hot-product .container .product-list .bg1 {
+  background-color: #fdc101;
+  width: 1198px;
+  height: 206px;
+  margin-top: 28px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hot-product .container .product-list .bg {
+  background-color: #fdc101;
+  width: 746px;
+  height: 125px;
+  position: absolute;
+  right: -25px;
+  top: 0;
+}
+.hot-product .container .product-list .bg2 {
+  background-color: #fdc101;
+  width: 746px;
+  height: 125px;
+  position: absolute;
+  left: -36px;
+  top: 144px;
+}
+.hot-product .container .product-list .product-detailed {
+  max-width: 1200px;
+  overflow: hidden;
+  height: auto;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 28px;
+}
+.hot-product .container .product-list .product-detailed ul {
+  width: 1210px;
+  *zoom: 1;
+}
+.hot-product .container .product-list .product-detailed ul:before,
+.hot-product .container .product-list .product-detailed ul:after {
+  content: "";
+  display: table;
+}
+.hot-product .container .product-list .product-detailed ul:after {
+  clear: both;
+}
+.hot-product .container .product-list .product-detailed ul li {
+  width: 292px;
+  float: left;
+  *display: inline;
+  margin-right: 10px;
+}
+.hot-product .container .product-list .product-detailed ul li a {
+  display: block;
+  width: 100%;
+}
+.hot-product .container .product-list .product-detailed ul li img {
+  width: 100%;
+  margin-bottom: 37px;
+}
+.hot-product .container .product-list .product-detailed ul li h3 {
+  width: 100%;
+  height: 114px;
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.hot-product .container .product-list .product-detailed ul li h3 span {
+  display: inline-block;
+}
+.hot-product .container .product-list .product-detailed ul li p {
+  width: 100%;
+  font-size: 12px;
+  line-height: 22px;
+  height: 110px;
+  padding-bottom: 22px;
+  border-bottom: 4px solid #fdc101;
+  color: #43443e;
+  margin-bottom: 35px;
+}
+.hot-product .container .product-list .product-detailed ul li:hover p {
+  border-bottom: 4px solid #0a0905;
+}
+.hot-product .container .product-list .product-detailed ul .email-info {
+  display: block;
+  padding-left: 29px;
+  height: 15px;
+  font-size: 15px;
+  line-height: 15px;
+  color: #b1b1b1;
+  background: url(../images/qy-email.png) no-repeat 0 0;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .hot-product .container .product-list .product-detailed ul {
+    width: 100%;
+  }
+  .hot-product .container .product-list .product-detailed ul li {
+    width: 25%;
+    margin: 0;
+  }
+  .hot-product .container .product-list .product-detailed ul li img,
+  .hot-product .container .product-list .product-detailed ul li p {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+  .hot-product .container .product-list .product-detailed ul li h3 {
+    width: 95%;
+    padding: 0 2.5%;
+  }
+  .hot-product .container .product-list .product-detailed ul li .email-info {
+    margin: 35px 2.5% 60px 2.5%;
+  }
+}
+@media screen and (max-width: 999px) {
+  .hot-product .container .product-list .product-detailed ul {
+    width: 100%;
+  }
+  .hot-product .container .product-list .product-detailed ul li {
+    width: 50%;
+    margin: 0;
+  }
+  .hot-product .container .product-list .product-detailed ul li img,
+  .hot-product .container .product-list .product-detailed ul li p {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .hot-product .container .product-list .product-detailed ul li h3 {
+    width: 80%;
+    padding: 0 10%;
+  }
+  .hot-product .container .product-list .product-detailed ul li .email-info {
+    margin: 35px 10% 60px 10%;
+  }
+}
+@media screen and (max-width: 999px) {
+  .hot-product .container .product-list {
+    height: 1314px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hot-product .container .product-list {
+    height: 1154px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hot-product .container .product-title {
+    margin-bottom: 50px;
+  }
+  .hot-product .container .right-seascape {
+    position: static;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .hot-product .container .product-list {
+    margin: 0;
+  }
+}
+.hot-product .container button {
+  display: block;
+  border: 0;
+  padding: 0 44px;
+  height: 46px;
+  line-height: 46px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #fdc101;
+}
